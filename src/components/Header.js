@@ -1,7 +1,7 @@
 import React from 'react';
 import '../scss/header.scss';
-import ButtonTest from './ButtonTest';
-import { Container } from 'semantic-ui-react';
+// import ButtonTest from './ButtonTest';
+// import { Container } from 'semantic-ui-react';
 
 const Header = () => {
   return (
