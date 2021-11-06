@@ -7,9 +7,15 @@ const Header = () => {
   return (
     <div className="headerContainer">
       <div className="ui three column grid headerLinks">
-        <h1 className="column">Main Header</h1>
-        <h1 className="column">Main Header</h1>
-        <h1 className="column">Main Header</h1>
+        <div className="column center">
+          <h3>Navigation Links</h3>
+        </div>
+        <div className="column center">
+          <h1>Koga Collective</h1>
+        </div>
+        <div className="column center">
+          <h3>merch, about, artists etc</h3>
+        </div>
       </div>
     </div>
   );

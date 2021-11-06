@@ -5,3 +5,22 @@
   display: flex;
   flex-direction: column;
 }
+
+.home-body-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+.left-column {
+  vertical-align: middle;
+}
+
+.grid-container {
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
