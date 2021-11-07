@@ -1,5 +1,7 @@
 import React from 'react';
 import '../scss/home.scss';
+import gpsaga from '../public/gpsaga.jpg';
+import femur from '../public/Femur.jpg';
 
 const HomeBody = () => {
   return (
@@ -8,7 +10,7 @@ const HomeBody = () => {
         <div className="column"></div>
         <div className="ui twelve wide column">
           <div className="ui raised fluid card home-cards">
-            <h1 className="center">Recent Tracks</h1>
+            <img src={gpsaga}></img>
           </div>
         </div>
 
