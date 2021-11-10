@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import gpsaga from '../public/gpsaga.jpg';
 import femur from '../public/Femur.jpg';
+import '../scss/home.scss';
 
 const BasicSlider = () => {
   var settings = {
@@ -13,11 +14,11 @@ const BasicSlider = () => {
   };
   return (
     <Slider {...settings}>
-      <div>
-        <img src={gpsaga}></img>
+      <div className="new-releases">
+        <img src={gpsaga} className="new-releases-image"></img>
       </div>
-      <div>
-        <img src={femur}></img>
+      <div className="new-releases">
+        <img src={femur} className="new-releases-image"></img>
       </div>
     </Slider>
   );

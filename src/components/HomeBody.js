@@ -1,7 +1,6 @@
 import React from 'react';
 import '../scss/home.scss';
-import gpsaga from '../public/gpsaga.jpg';
-import femur from '../public/Femur.jpg';
+
 import BasicSlider from './BasicSlider';
 
 const HomeBody = () => {
@@ -9,13 +8,11 @@ const HomeBody = () => {
     <div className="home-body-container">
       <div className="ui eight column two row grid container grid-container">
         <div className="column"></div>
-        <div className="ui twelve wide column">
-          <div className="ui raised fluid card home-cards">
+        <div className="ui sixteen wide column">
+          <div className="ui raised fluid card home-cards twenty four wide column">
             <BasicSlider />
           </div>
         </div>
-
-        <div className="column"></div>
 
         <div className="column"></div>
         <div className="ui eight wide column">

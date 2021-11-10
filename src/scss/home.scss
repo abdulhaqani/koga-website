@@ -24,3 +24,16 @@
   width: 100%;
   text-align: center;
 }
+
+.new-releases {
+  width: 100vh;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-releases-image {
+  max-width: 90%;
+  margin: auto;
+}
