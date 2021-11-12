@@ -5,16 +5,17 @@ import femur from '../public/Femur.jpg';
 import '../scss/home.scss';
 
 const BasicSlider = () => {
-  var settings = {
+  let settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
     <Slider {...settings}>
-      <div className="new-releases">
+      <div className="gpsaga">
         <img src={gpsaga} className="new-releases-image"></img>
       </div>
       <div className="new-releases">

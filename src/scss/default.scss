@@ -3,3 +3,25 @@
   margin: auto;
 }
 
+@mixin new-releases {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../public/gpsaga.jpg);
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.new-releases-image {
+  max-width: 90%;
+  margin: auto;
+}

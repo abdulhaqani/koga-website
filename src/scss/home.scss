@@ -7,11 +7,12 @@
 }
 
 .home-body-container {
+  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: auto;
-  height: auto;
+  width: 96vw;
+  height: fit-content;
   vertical-align: middle;
 }
 
@@ -25,15 +26,21 @@
   text-align: center;
 }
 
-.new-releases {
-  width: 100vh;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.gpsaga {
+  @include new-releases();
 }
 
+.femur {
+  @include new-releases();
+  background-image: url(../public/Femur.jpg);
+}
 .new-releases-image {
+  max-height: 90vh;
   max-width: 90%;
   margin: auto;
+}
+
+.padded-image {
+  height: 100vh;
+  width: 80vw;
 }
