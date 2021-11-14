@@ -4,24 +4,29 @@
 }
 
 @mixin new-releases {
-  width: 90vw;
-  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+@mixin background-image {
   background-image: url(../public/gpsaga.jpg);
-
   /* Add the blur effect */
-  filter: blur(8px);
+  backdrop-filter: blur(8px);
   -webkit-filter: blur(8px);
-
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.new-releases-image {
-  max-width: 90%;
-  margin: auto;
 }

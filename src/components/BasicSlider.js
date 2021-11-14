@@ -1,8 +1,12 @@
 import React from 'react';
 import Slider from 'react-slick';
-import gpsaga from '../public/gpsaga.jpg';
-import femur from '../public/Femur.jpg';
+import baraku from '../public/baraku.jpeg';
+import antagonist from '../public/antagonist-blurred.png';
+import elevatorMsc from '../public/elevator.msc.png';
+import nightingale from '../public/nightingale.jpg';
+import tesla from '../public/tesla.png';
 import '../scss/home.scss';
+import '../scss/default.scss';
 
 const BasicSlider = () => {
   let settings = {
@@ -15,11 +19,33 @@ const BasicSlider = () => {
 
   return (
     <Slider {...settings}>
-      <div className="gpsaga">
-        <img src={gpsaga} className="new-releases-image"></img>
+      <div className="antagonist-container">
+        <div className="antagonist"></div>
+        <img src={antagonist} className="new-releases-image" alt="antagonist" />
       </div>
-      <div className="new-releases">
-        <img src={femur} className="new-releases-image"></img>
+      <div className="baraku-container">
+        <div className="baraku"></div>
+        <img src={baraku} className="new-releases-image" alt="baraku" />
+      </div>
+      <div className="tesla-container">
+        <div className="tesla"></div>
+        <img src={tesla} className="new-releases-image" alt="tesla" />
+      </div>
+      <div className="elevator-msc-container">
+        <div className="elevator-msc"></div>
+        <img
+          src={elevatorMsc}
+          className="new-releases-image"
+          alt="elevator.msc"
+        />
+      </div>
+      <div className="nightingale-container">
+        <div className="nightingale"></div>
+        <img
+          src={nightingale}
+          className="new-releases-image"
+          alt="nightingale"
+        />
       </div>
     </Slider>
   );

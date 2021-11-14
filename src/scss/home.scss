@@ -2,6 +2,7 @@
 
 .home {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -11,7 +12,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 96vw;
+  width: 100vw;
+  height: fit-content;
+  vertical-align: middle;
+  background-color: black;
+}
+
+.home-image-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
   height: fit-content;
   vertical-align: middle;
 }
@@ -26,21 +38,85 @@
   text-align: center;
 }
 
-.gpsaga {
+.nightingale-container {
   @include new-releases();
 }
 
-.femur {
-  @include new-releases();
-  background-image: url(../public/Femur.jpg);
+.nightingale {
+  @include background-image();
+  background-image: url(../public/nightingale.jpg);
 }
-.new-releases-image {
-  max-height: 90vh;
-  max-width: 90%;
+
+.antagonist-container {
+  @include new-releases();
+}
+.antagonist {
+  @include background-image();
+  background-image: url(../public/antagonist-blurred.png);
+}
+
+.elevator-msc-container {
+  @include new-releases();
+}
+
+.elevator-msc {
+  @include background-image();
+  background-image: url(../public/elevator.msc.png);
+}
+
+.tesla-container {
+  @include new-releases();
+}
+.tesla {
+  @include background-image();
+  background-image: url(../public/tesla.png);
+}
+
+.baraku-container {
+  @include new-releases();
+}
+
+.baraku {
+  @include background-image();
+  background-image: url(../public/baraku.jpeg);
+}
+
+.new-releases-header {
+  position: absolute;
+  z-index: 20;
   margin: auto;
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-variant: small-caps;
+  font-size: xx-large;
 }
 
-.padded-image {
-  height: 100vh;
-  width: 80vw;
+.new-releases-image {
+  position: relative;
+  top: 5vh;
+  height: 90vh;
+  width: fit-content;
+  margin: auto;
+  z-index: 5 !important;
+}
+
+.slick-dots {
+  padding-top: 5%;
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 1%;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 1%;
+  z-index: 10;
 }

@@ -8,7 +8,11 @@ export const Home = () => {
   return (
     <div className="home">
       <Header />
-      <HomeBody />
+      <div className="home-body-container">
+        <h1 className="new-releases-header">New Releases</h1>
+
+        <HomeBody />
+      </div>
       <Footer />
     </div>
   );

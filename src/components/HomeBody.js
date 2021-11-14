@@ -5,8 +5,8 @@ import BasicSlider from './BasicSlider';
 
 const HomeBody = () => {
   return (
-    <div className="home-body-container">
-      <div className="ui raised fluid card padded-image">
+    <div className="home-image-container">
+      <div className="ui raised fluid card">
         <BasicSlider />
       </div>
       <div className="ui eight column two row grid container grid-container">
