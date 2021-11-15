@@ -81,6 +81,24 @@
   background-image: url(../public/baraku.jpeg);
 }
 
+.comemyway-container {
+  @include new-releases();
+}
+
+.comemyway {
+  @include background-image();
+  background-image: url(../public/comemyway.jpg);
+}
+
+.benchmark-container {
+  @include new-releases();
+}
+
+.benchmark {
+  @include background-image();
+  background-image: url(../public/benchmark.jpg);
+}
+
 .new-releases-header {
   position: absolute;
   z-index: 20;
