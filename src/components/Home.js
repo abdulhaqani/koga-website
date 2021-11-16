@@ -9,8 +9,6 @@ export const Home = () => {
     <div className="home">
       <Header />
       <div className="home-body-container">
-        <h1 className="new-releases-header">New Releases</h1>
-
         <HomeBody />
       </div>
       <Footer />

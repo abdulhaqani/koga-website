@@ -100,8 +100,6 @@
 }
 
 .new-releases-header {
-  position: absolute;
-  z-index: 20;
   margin: auto;
   width: 100%;
   text-align: center;
@@ -137,4 +135,26 @@
 .slick-next {
   right: 1%;
   z-index: 10;
+}
+
+.nav-links {
+  position: fixed;
+  top: 2%;
+  z-index: 10;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link {
+  color: #ddd;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: x-large;
+}
+
+.nav-link:hover {
+  font-weight: 800;
+  font-size: xx-large;
+  transition: all 500ms;
 }
