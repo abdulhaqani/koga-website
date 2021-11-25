@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/home.scss';
+import Femur from '../public/Femur.jpg';
 
 import BasicSlider from './BasicSlider';
 
@@ -9,11 +10,11 @@ const HomeBody = () => {
       <div className="ui raised fluid card">
         <BasicSlider />
       </div>
-      <div className="ui eight column two row grid container grid-container">
-        <div className="column"></div>
-        <div className="ui eight wide column">
+      <div className="ui two row grid container grid-container">
+        <div className="ui twelve wide column">
           <div className="ui raised fluid card center">
             <h1 className="center">Upcoming Tracks</h1>
+            <img src={Femur}></img>
           </div>
         </div>
         <div className="ui four wide column">
