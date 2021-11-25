@@ -15,7 +15,6 @@
   width: 100vw;
   height: fit-content;
   vertical-align: middle;
-  background-color: black;
 }
 
 .home-image-container {
@@ -138,7 +137,7 @@
 }
 
 .nav-links {
-  position: fixed;
+  position: absolute;
   top: 2%;
   z-index: 10;
   margin: auto;
@@ -150,11 +149,17 @@
   color: #ddd;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: x-large;
+  font-size: large;
+  margin: auto;
 }
 
 .nav-link:hover {
   font-weight: 800;
-  font-size: xx-large;
+  font-size: x-large;
+  color: #ddd;
   transition: all 500ms;
+}
+
+.icons {
+  top: -1.5vh;
 }
