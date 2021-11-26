@@ -1,6 +1,6 @@
 import React from 'react';
 import '../scss/home.scss';
-import Femur from '../public/Femur.jpg';
+import baraku from '../public/baraku.jpeg';
 
 import BasicSlider from './BasicSlider';
 
@@ -14,7 +14,7 @@ const HomeBody = () => {
         <div className="ui twelve wide column">
           <div className="ui raised fluid card center">
             <h1 className="center">Upcoming Tracks</h1>
-            <img src={Femur}></img>
+            <img src={baraku} alt="upcoming" />
           </div>
         </div>
         <div className="ui four wide column">
