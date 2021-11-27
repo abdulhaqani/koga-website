@@ -24,7 +24,7 @@ const Header = () => {
         <li className="nav-link three wide column">
           <a
             className="nav-link"
-            href="https://github.com/abdulhaqani"
+            href="https://www.instagram.com/kogamusic00/?utm_medium=copy_link"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +34,7 @@ const Header = () => {
         <li className="nav-link three wide column">
           <a
             className="nav-link"
-            href="https://github.com/abdulhaqani"
+            href="https://www.facebook.com/KogaClanStudios"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -44,7 +44,7 @@ const Header = () => {
         <li className="nav-link three wide column">
           <a
             className="nav-link"
-            href="https://github.com/abdulhaqani"
+            href="https://www.youtube.com/c/kogamusic00"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,7 +54,7 @@ const Header = () => {
         <li className="nav-link two wide column">
           <a
             className="nav-link"
-            href="https://github.com/abdulhaqani"
+            href="https://open.spotify.com/artist/0nsTvhODP9ZYbxC0KePYSQ?si=TEQHkFV6QQO3YQJERaw7kg"
             target="_blank"
             rel="noopener noreferrer"
           >
