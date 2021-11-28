@@ -21,7 +21,7 @@ const HomeBody = () => {
           <div className="ui raised fluid card playlist-card">
             <h1 className="center">Playlist links</h1>
             <iframe
-              src="https://open.spotify.com/embed/playlist/1H7VjWekFdAanBNTdRnsEl?utm_source=generator"
+              src="https://open.spotify.com/embed/playlist/1H7VjWekFdAanBNTdRnsEl?utm_source=generator&theme=0"
               width="100%"
               height="100%"
               frameBorder="0"
