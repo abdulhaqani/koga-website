@@ -32,9 +32,39 @@
 }
 
 .grid-container {
-  vertical-align: middle;
   width: 100%;
   text-align: center;
+  height: fit-content;
+  margin-bottom: 5%;
+}
+
+.upcoming-tracks {
+  float: left;
+  padding: 5%;
+  width: 70%;
+  height: 100vh;
+  padding-top: 0%;
+  margin: auto;
+}
+
+.playlist {
+  width: 30%;
+  float: right;
+  padding-right: 5%;
+  height: 100%;
+}
+
+.upcoming-release {
+  height: 100%;
+  margin: auto;
+  width: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.playlist-card {
+  height: 100vh;
+  padding-bottom: 5%;
 }
 
 .nightingale-container {
@@ -162,8 +192,4 @@
 
 .icons {
   top: -1.5vh;
-}
-
-.track-card {
-  width: 100%;
 }

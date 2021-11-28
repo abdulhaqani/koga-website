@@ -10,7 +10,7 @@ import benchmark from '../public/benchmark.jpg';
 import '../scss/home.scss';
 import '../scss/default.scss';
 
-const BasicSlider = () => {
+const MusicSlider = () => {
   let settings = {
     dots: true,
     infinite: true,
@@ -62,4 +62,4 @@ const BasicSlider = () => {
   );
 };
 
-export default BasicSlider;
+export default MusicSlider;
