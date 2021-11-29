@@ -12,14 +12,9 @@ const Header = () => {
       <ul className="five wide column ui grid icons">
         <li className="two wide column"></li>
         <li className="nav-link three wide column">
-          <a
-            className="nav-link"
-            href="https://github.com/abdulhaqani"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link to={'/'} className="nav-link">
             <i class="fas fa-home"></i>
-          </a>
+          </Link>
         </li>
         <li className="nav-link three wide column">
           <a
