@@ -165,31 +165,3 @@
   right: 1%;
   z-index: 10;
 }
-
-.nav-links {
-  position: absolute;
-  top: 2%;
-  z-index: 10;
-  margin: auto;
-  width: 100%;
-  text-align: center;
-}
-
-.nav-link {
-  color: #ddd;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: large;
-  margin: auto;
-}
-
-.nav-link:hover {
-  font-weight: 800;
-  font-size: x-large;
-  color: #ddd;
-  transition: all 500ms;
-}
-
-.icons {
-  top: -1.5vh;
-}

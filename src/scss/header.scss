@@ -12,3 +12,23 @@
   margin: auto;
   text-align: center;
 }
+
+.nav-links {
+  position: absolute;
+  top: 2%;
+  z-index: 10;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link:hover {
+  font-weight: 800;
+  font-size: x-large;
+  color: #ddd;
+  transition: all 500ms;
+}
+
+.icons {
+  top: -1.5vh;
+}
