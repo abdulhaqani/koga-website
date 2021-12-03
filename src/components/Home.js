@@ -7,7 +7,9 @@ import HomeBody from './HomeBody';
 export const Home = () => {
   return (
     <div className="home">
-      <Header />
+      <div className="header-container">
+        <Header />
+      </div>
       <div className="home-body-container">
         <HomeBody />
       </div>

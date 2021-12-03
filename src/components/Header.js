@@ -1,6 +1,7 @@
 import React from 'react';
 import '../scss/header.scss';
 import '../scss/home.scss';
+import '../scss/default.scss';
 import { Link } from 'react-router-dom';
 
 // import ButtonTest from './ButtonTest';
