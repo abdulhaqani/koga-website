@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import baraku from '../public/baraku.jpeg';
 import antagonist from '../public/antagonist-blurred.png';
@@ -10,17 +10,29 @@ import benchmark from '../public/benchmark.jpg';
 import '../scss/home.scss';
 import '../scss/default.scss';
 
-const MusicSlider = () => {
+const ArtistSlider = () => {
+  const [autoplay, setAutoplay] = useState(false);
   let settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    fade: true,
+    autoplaySpeed: 1500,
+    cssEase: 'linear',
+    pauseOnHover: true,
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      autoplay ? setAutoplay(false) : setAutoplay(true);
+    }, 3000);
+    return;
+  }, [autoplay]);
+
   return (
-    <Slider {...settings}>
+    <Slider {...settings} autoplay={autoplay}>
       <div className="baraku-container">
         <div className="baraku"></div>
         <a
@@ -108,4 +120,4 @@ const MusicSlider = () => {
   );
 };
 
-export default MusicSlider;
+export default ArtistSlider;

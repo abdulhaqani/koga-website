@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Home from './components/Home';
 import About from './components/About.js';
 import Artists from './components/Artists';
-import Music from './components/Music';
+import Videos from './components/Videos';
 import Contact from './components/Contact';
 import RaceClub from './components/RaceClub.js';
 // scss
@@ -20,7 +20,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/music" element={<Music />} />
+          <Route exact path="/videos" element={<Videos />} />
           <Route exact path="/artists" element={<Artists />} />
           <Route exact path="/hikikomori-race-club" element={<RaceClub />} />
         </Routes>
