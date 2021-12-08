@@ -1,8 +1,7 @@
 import React from 'react';
 import '../scss/home.scss';
 import '../scss/default.scss';
-import baraku from '../public/baraku.jpeg';
-
+import HomeMusic from './HomeMusic';
 import MusicSlider from './MusicSlider';
 
 const HomeBody = () => {
@@ -12,12 +11,6 @@ const HomeBody = () => {
         <MusicSlider />
       </div>
       <div className="grid-container">
-        <div className="upcoming-tracks">
-          <div className="ui raised fluid card center upcoming-card">
-            <div className="upcoming-text">Coming soon ...</div>
-            <img src={baraku} alt="upcoming" className="upcoming-release" />
-          </div>
-        </div>
         <div className="playlist">
           <div className="ui raised fluid card playlist-card">
             <iframe
@@ -30,6 +23,35 @@ const HomeBody = () => {
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               title="spotify-link"
             ></iframe>
+          </div>
+        </div>
+        <div className="ui three row grid track-component-grid">
+          <div className="ui five wide column">
+            <HomeMusic />
+          </div>
+          <div className="ui five wide column">
+            <HomeMusic />
+          </div>
+          <div className="ui five wide column">
+            <HomeMusic />
+          </div>
+          <div className="ui five wide column">
+            <HomeMusic />
+          </div>
+          <div className="ui five wide column">
+            <HomeMusic />
+          </div>
+          <div className="ui five wide column">
+            <HomeMusic />
+          </div>
+          <div className="ui five wide column">
+            <HomeMusic />
+          </div>
+          <div className="ui five wide column">
+            <HomeMusic />
+          </div>
+          <div className="ui five wide column">
+            <HomeMusic />
           </div>
         </div>
       </div>

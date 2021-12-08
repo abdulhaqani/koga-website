@@ -39,11 +39,9 @@
 
 .upcoming-tracks {
   float: left;
-  padding: 1%;
-  width: 70%;
+  width: 100%;
   height: fit-content;
   padding-top: 0%;
-  padding-bottom: 1%;
   margin: auto;
 }
 
@@ -182,4 +180,8 @@
   font-weight: 300;
   font-size: x-large;
   text-align: center;
+}
+
+.track-component-grid {
+  width: 70%;
 }
