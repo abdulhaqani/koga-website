@@ -1,8 +1,17 @@
-import React from 'react';
-import '../scss/home.scss';
-import '../scss/default.scss';
-import HomeMusic from './HomeMusic';
-import MusicSlider from './MusicSlider';
+import React from "react";
+import "../scss/home.scss";
+import "../scss/default.scss";
+import baraku from "../public/baraku.jpeg";
+import antagonist from "../public/antagonist-blurred.png";
+import elevatorMsc from "../public/elevator.msc.png";
+import nightingale from "../public/nightingale.jpg";
+import tesla from "../public/tesla.png";
+import Lman from "../public/Lman.jpg";
+import misadv from "../public/misadv.jpg";
+import comemyway from "../public/comemyway.jpg";
+import benchmark from "../public/benchmark.jpg";
+import HomeMusic from "./HomeMusic";
+import MusicSlider from "./MusicSlider";
 
 const HomeBody = () => {
   return (
@@ -25,34 +34,35 @@ const HomeBody = () => {
             ></iframe>
           </div>
         </div>
-        <div className="ui three row grid track-component-grid">
+        <div className="ui four row grid track-component-grid">
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={baraku} />
           </div>
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={antagonist} />
           </div>
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={elevatorMsc} />
           </div>
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={benchmark} />
           </div>
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={comemyway} />
           </div>
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={tesla} />
           </div>
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={nightingale} />
           </div>
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={misadv} />
           </div>
           <div className="ui five wide column">
-            <HomeMusic />
+            <HomeMusic ImageName={Lman} />
           </div>
+          <div className="ui sixteen wide column"></div>
         </div>
       </div>
     </div>
