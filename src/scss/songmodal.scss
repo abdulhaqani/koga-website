@@ -1,0 +1,14 @@
+@import './default.scss';
+
+.song-modal {
+  margin: auto;
+  width: 100%;
+}
+
+.song-modal-container {
+  width: 100vw;
+  min-height: max-content;
+  min-width: fit-content;
+  text-align: center;
+  margin: auto;
+}

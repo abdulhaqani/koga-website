@@ -1,17 +1,18 @@
-import React from "react";
-import "../scss/home.scss";
-import "../scss/default.scss";
-import baraku from "../public/baraku.jpeg";
-import antagonist from "../public/antagonist-blurred.png";
-import elevatorMsc from "../public/elevator.msc.png";
-import nightingale from "../public/nightingale.jpg";
-import tesla from "../public/tesla.png";
-import Lman from "../public/Lman.jpg";
-import misadv from "../public/misadv.jpg";
-import comemyway from "../public/comemyway.jpg";
-import benchmark from "../public/benchmark.jpg";
-import HomeMusic from "./HomeMusic";
-import MusicSlider from "./MusicSlider";
+import React from 'react';
+import '../scss/home.scss';
+import '../scss/default.scss';
+import baraku from '../public/baraku.jpeg';
+import antagonist from '../public/antagonist-blurred.png';
+import elevatorMsc from '../public/elevator.msc.png';
+import nightingale from '../public/nightingale.jpg';
+import tesla from '../public/tesla.png';
+import Lman from '../public/Lman.jpg';
+import misadv from '../public/misadv.jpg';
+import comemyway from '../public/comemyway.jpg';
+import benchmark from '../public/benchmark.jpg';
+import HomeMusic from './HomeMusic';
+import MusicSlider from './MusicSlider';
+import SongModal from './SongModal';
 
 const HomeBody = () => {
   return (
@@ -19,6 +20,7 @@ const HomeBody = () => {
       <div className="ui raised fluid card">
         <MusicSlider />
       </div>
+      <SongModal />
       <div className="grid-container">
         <div className="playlist">
           <div className="ui raised fluid card playlist-card">

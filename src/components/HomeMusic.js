@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from 'semantic-ui-react';
 import '../scss/home.scss';
 import '../scss/default.scss';
 import baraku from '../public/baraku.jpeg';
@@ -9,10 +10,14 @@ const HomeMusic = (props) => {
     <div>
       <div className="upcoming-tracks">
         <div className="ui raised fluid card center upcoming-card">
-          <img
-            src={props.ImageName}
-            alt="upcoming"
-            className="upcoming-release"
+          <SongModal
+            ModalTrigger={
+              <Image
+                src={props.ImageName}
+                alt="upcoming"
+                className="upcoming-release"
+              />
+            }
           />
         </div>
       </div>

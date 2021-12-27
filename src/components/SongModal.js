@@ -1,39 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Header, Image, Modal } from 'semantic-ui-react';
 import baraku from '../public/baraku.jpeg';
 
-const SongModal = () => {
+import '../scss/songmodal.scss';
+import '../scss/default.scss';
+const SongModal = (props) => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div>
-      <div class="ui modal">
-        <i class="close icon"></i>
-        <div class="header">Profile Picture</div>
-        <div class="image content">
-          <div class="ui medium image">
-            <img src={baraku} />
-          </div>
-          <div class="description">
-            <div class="ui header">
-              We've auto-chosen a profile image for you.
-            </div>
-            <p>
-              We've grabbed the following image from the{' '}
-              <a href="https://www.gravatar.com" target="_blank">
-                gravatar
-              </a>{' '}
-              image associated with your registered e-mail address.
-            </p>
-            <p>Is it okay to use this photo?</p>
-          </div>
-        </div>
-        <div class="actions">
-          <div class="ui black deny button">Nope</div>
-          <div class="ui positive right labeled icon button">
-            Yep, that's me
-            <i class="checkmark icon"></i>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Modal
+      onClose={() => setOpen(false)}
+      onOpen={() => setOpen(true)}
+      open={open}
+      trigger={props.ModalTrigger}
+    >
+      <Modal.Header>Select a Photo</Modal.Header>
+      <Modal.Content image>
+        {props.ModalTrigger}
+        <Modal.Description>
+          <Header>Default Profile Image</Header>
+          <p>Song description</p>
+        </Modal.Description>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button color="black" onClick={() => setOpen(false)}>
+          Close
+        </Button>
+        <Button color="green" onClick={() => setOpen(false)}>
+          Listen to Song
+        </Button>
+      </Modal.Actions>
+    </Modal>
   );
 };
 
