@@ -3,6 +3,7 @@
 .song-modal {
   margin: auto;
   width: 100%;
+  background-color: black;
 }
 
 .song-modal-container {
@@ -11,4 +12,14 @@
   min-width: fit-content;
   text-align: center;
   margin: auto;
+}
+
+.ui.modal {
+  background-color: black !important;
+}
+
+.modal-image {
+  margin: auto;
+  width: 50%;
+  height: auto;
 }

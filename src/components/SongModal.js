@@ -9,20 +9,27 @@ const SongModal = (props) => {
 
   return (
     <Modal
+      dimmer="blurring"
+      closeIcon
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
       trigger={props.ModalTrigger}
     >
-      <Modal.Header>Select a Photo</Modal.Header>
-      <Modal.Content image>
-        {props.ModalTrigger}
+      <Modal.Content
+        className="scrolling content dark-theme-bg"
+        style={{ background: '#121212', color: '#dddddd' }}
+      >
+        <Image
+          src={props.ImageName}
+          alt="modal-image"
+          className="modal-image"
+        />
         <Modal.Description>
-          <Header>Default Profile Image</Header>
-          <p>Song description</p>
+          <h2 className="center">Song description</h2>
         </Modal.Description>
       </Modal.Content>
-      <Modal.Actions>
+      <Modal.Actions style={{ 'background-color': '#121212' }}>
         <Button color="black" onClick={() => setOpen(false)}>
           Close
         </Button>

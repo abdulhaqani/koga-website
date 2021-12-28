@@ -18,6 +18,7 @@ const HomeMusic = (props) => {
                 className="upcoming-release"
               />
             }
+            ImageName={props.ImageName}
           />
         </div>
       </div>
