@@ -19,6 +19,7 @@ const HomeMusic = (props) => {
               />
             }
             ImageName={props.ImageName}
+            SongLink={props.SongLink}
           />
         </div>
       </div>

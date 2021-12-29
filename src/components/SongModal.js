@@ -18,15 +18,35 @@ const SongModal = (props) => {
     >
       <Modal.Content
         className="scrolling content dark-theme-bg"
-        style={{ background: '#121212', color: '#dddddd' }}
+        style={{ background: '#121212', color: '#dddddd', padding: '0%' }}
       >
-        <Image
-          src={props.ImageName}
-          alt="modal-image"
-          className="modal-image"
-        />
+        <div className="modal-image-container">
+          <a href={props.SongLink} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={props.ImageName}
+              alt="modal-image"
+              className="modal-image"
+            />
+          </a>
+        </div>
+
         <Modal.Description>
-          <h2 className="center">Song description</h2>
+          <h2 className="center">
+            Song description Song descriptionSong description Song description
+            Song description Song description Song description Song description
+            Song description Song descriptionSong description Song
+            descriptionSong description Song descriptionSong description Song
+            descriptionSong descriptionSong description Song description Song
+            description Song descriptionSong descriptionSong descriptionSong
+            description Song description Song descriptionSong descriptionSong
+            description Song descriptionSong descriptionSong descriptionSong
+            description Song descriptionSong description Song description Song
+            descriptionSong description Song description Song descriptionSong
+            description Song descriptionSong descriptionSong description Song
+            descriptionSong descriptionSong description Song descriptionSong
+            description Song descriptionSong description Song description Song
+            description
+          </h2>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions style={{ 'background-color': '#121212' }}>

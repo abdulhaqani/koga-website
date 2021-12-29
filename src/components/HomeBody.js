@@ -38,31 +38,58 @@ const HomeBody = () => {
         </div>
         <div className="ui four row grid track-component-grid">
           <div className="ui five wide column">
-            <HomeMusic ImageName={baraku} />
+            <HomeMusic
+              ImageName={baraku}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui five wide column">
-            <HomeMusic ImageName={antagonist} />
+            <HomeMusic
+              ImageName={antagonist}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui five wide column">
-            <HomeMusic ImageName={elevatorMsc} />
+            <HomeMusic
+              ImageName={elevatorMsc}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui five wide column">
-            <HomeMusic ImageName={benchmark} />
+            <HomeMusic
+              ImageName={benchmark}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui five wide column">
-            <HomeMusic ImageName={comemyway} />
+            <HomeMusic
+              ImageName={comemyway}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui five wide column">
-            <HomeMusic ImageName={tesla} />
+            <HomeMusic
+              ImageName={tesla}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui five wide column">
-            <HomeMusic ImageName={nightingale} />
+            <HomeMusic
+              ImageName={nightingale}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui five wide column">
-            <HomeMusic ImageName={misadv} />
+            <HomeMusic
+              ImageName={misadv}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui five wide column">
-            <HomeMusic ImageName={Lman} />
+            <HomeMusic
+              ImageName={Lman}
+              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+            />
           </div>
           <div className="ui sixteen wide column"></div>
         </div>
