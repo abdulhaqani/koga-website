@@ -9,7 +9,7 @@ import About from './components/About.js';
 import Artists from './components/Artists';
 import Videos from './components/Videos';
 import Contact from './components/Contact';
-import RaceClub from './components/RaceClub.js';
+import Merch from './components/Merch.js';
 // scss
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/videos" element={<Videos />} />
           <Route exact path="/artists" element={<Artists />} />
-          <Route exact path="/hikikomori-race-club" element={<RaceClub />} />
+          <Route exact path="/merch" element={<Merch />} />
         </Routes>
       </Fragment>
     </Router>

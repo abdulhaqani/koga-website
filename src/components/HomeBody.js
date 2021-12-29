@@ -46,49 +46,49 @@ const HomeBody = () => {
           <div className="ui five wide column">
             <HomeMusic
               ImageName={antagonist}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              SongLink="https://open.spotify.com/track/0VDpB5eaIRcwehxljFR882?si=3d922911a22841fc"
             />
           </div>
           <div className="ui five wide column">
             <HomeMusic
               ImageName={elevatorMsc}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              SongLink="https://open.spotify.com/track/6TXDvYkGSvMLRKtAm8qFgD?si=0e07347d70744d56"
             />
           </div>
           <div className="ui five wide column">
             <HomeMusic
               ImageName={benchmark}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              SongLink="https://open.spotify.com/track/0Lc4R9b0AZFSYafNwm0As7?si=22d6c997779d4578"
             />
           </div>
           <div className="ui five wide column">
             <HomeMusic
               ImageName={comemyway}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              SongLink="https://open.spotify.com/track/2zPEqch058WqgylDBwfj5p?si=31e488c2e1b347f7"
             />
           </div>
           <div className="ui five wide column">
             <HomeMusic
               ImageName={tesla}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              SongLink="https://open.spotify.com/track/0rOaZsCdEmPzdXDmyNfENI?si=d71291c31de44522"
             />
           </div>
           <div className="ui five wide column">
             <HomeMusic
               ImageName={nightingale}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              SongLink="https://open.spotify.com/track/0qCKgI1nQFAeFne0CtXdoN?si=de3a8f6d150f4a97"
             />
           </div>
           <div className="ui five wide column">
             <HomeMusic
               ImageName={misadv}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              SongLink="https://open.spotify.com/album/2MB4yaCKAmImF7UzdcUM9O?si=212OEehBSB-cIbDo5JWw5A"
             />
           </div>
           <div className="ui five wide column">
             <HomeMusic
               ImageName={Lman}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              SongLink="https://open.spotify.com/album/5vlIHAnKxJhAbNWFHU3o0V?si=QZH76oS0T-iqYzFivMQVpw"
             />
           </div>
           <div className="ui sixteen wide column"></div>

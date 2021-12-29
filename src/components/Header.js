@@ -82,8 +82,8 @@ const Header = () => {
           </Link>
         </li>
         <li className="three wide column center aligned nav-link">
-          <Link to={'/raceclub'} className="nav-link">
-            Raceclub
+          <Link to={'/merch'} className="nav-link">
+            Merch
           </Link>
         </li>
         <li className="one wide column center aligned nav-link"></li>
