@@ -4,9 +4,6 @@ import '../scss/home.scss';
 import '../scss/default.scss';
 import { Link } from 'react-router-dom';
 
-// import ButtonTest from './ButtonTest';
-// import { Container } from 'semantic-ui-react';
-
 const Header = () => {
   return (
     <ul className="ui grid nav-links">

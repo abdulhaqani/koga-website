@@ -16,7 +16,6 @@ const Artists = () => {
         <img src={antagonist} className="artist" alt="antagonist" />
         <img src={antagonist} className="artist" alt="antagonist" />
         <img src={antagonist} className="artist" alt="antagonist" />
-        <img src={antagonist} className="artist" alt="antagonist" />
       </div>
       <Footer />
     </div>
