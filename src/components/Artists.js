@@ -11,11 +11,16 @@ const Artists = () => {
         <Header />
       </div>
       <div className="artists">
-        <img src={antagonist} className="artist" alt="antagonist" />
-        <img src={antagonist} className="artist" alt="antagonist" />
-        <img src={antagonist} className="artist" alt="antagonist" />
-        <img src={antagonist} className="artist" alt="antagonist" />
-        <img src={antagonist} className="artist" alt="antagonist" />
+        <div className="ui grid">
+          <div className="eight wide column center aligned row">
+            <img src={antagonist} className="artist" alt="antagonist" />
+            <img src={antagonist} className="artist" alt="antagonist" />
+          </div>
+          <div className="eight wide column center aligned row">
+            <img src={antagonist} className="artist" alt="antagonist" />
+            <img src={antagonist} className="artist" alt="antagonist" />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
