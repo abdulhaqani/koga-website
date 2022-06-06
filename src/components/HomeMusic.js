@@ -2,7 +2,6 @@ import React from 'react';
 import { Image } from 'semantic-ui-react';
 import '../scss/home.scss';
 import '../scss/default.scss';
-import baraku from '../public/baraku.jpeg';
 import SongModal from './SongModal';
 
 const HomeMusic = (props) => {

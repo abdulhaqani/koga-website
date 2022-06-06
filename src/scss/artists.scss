@@ -1,11 +1,18 @@
 .artists {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   background-image: radial-gradient(#444, #333, #222, #111);
 }
 
 .artist {
-  width: 66%;
-  margin: auto;
+  flex-direction: row;
+  width: 45%;
   border-style: solid;
   border-width: 1px;
   border-color: #ddd;
+}
+
+.artist-image {
+  width: 100%;
 }
