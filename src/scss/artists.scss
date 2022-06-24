@@ -22,3 +22,24 @@
 .artistModal {
   background: #333;
 }
+
+.modalDescription {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.modalDescContainer {
+  margin: auto;
+  width: 80%;
+  min-width: 500px;
+  text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.modalDescTitle {
+  font-size: x-large;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2%;
+}

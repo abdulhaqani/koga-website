@@ -6,6 +6,7 @@ import { Modal, Image, Button, Icon } from 'semantic-ui-react';
 import { TransitionModal } from 'semantic-ui-react-transition-modal';
 import antagonist from '../public/antagonist-blurred.png';
 import '../scss/artists.scss';
+import '../scss/default.scss';
 
 const Artists = () => {
   const [open, setOpen] = React.useState(false);
@@ -31,8 +32,10 @@ const Artists = () => {
               />
             }
           >
-            <div className="artistModal">
-              <Modal.Header>Profile Picture</Modal.Header>
+            <div className="artistModal center">
+              <Modal.Header>
+                <h1 className="modalDescTitle">Profile Picture</h1>
+              </Modal.Header>
               <Modal.Content image scrolling>
                 <Image
                   size="medium"
@@ -41,10 +44,18 @@ const Artists = () => {
                 />
 
                 <Modal.Description>
-                  <p>
-                    This is an example of expanded content that will cause the
-                    modal's dimmer to scroll.
-                  </p>
+                  <div className="modalDescContainer">
+                    <p className="modalDescription">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </p>
+                  </div>
 
                   <Image
                     src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
