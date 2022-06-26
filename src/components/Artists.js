@@ -32,67 +32,37 @@ const Artists = () => {
               />
             }
           >
-            <div className="artistModal center">
-              <Modal.Header>
-                <h1 className="modalDescTitle">Profile Picture</h1>
-              </Modal.Header>
+            <div className="artist-modal center">
+              <Modal.Header></Modal.Header>
+
               <Modal.Content image scrolling>
-                <Image
-                  size="medium"
-                  src="https://react.semantic-ui.com/images/wireframe/image.png"
-                  wrapped
-                />
+                <h1 className="artist-modal-title">Training Season</h1>
+                <div className="modal-header-container">
+                  <Image size="large" src={antagonist} wrapped />
+                </div>
 
                 <Modal.Description>
-                  <div className="modalDescContainer">
-                    <p className="modalDescription">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                  <div className="artist-modal-description-container ui grid">
+                    <div className="eight wide column center">
+                      <h1>Recent release</h1>
+                      <iframe
+                        className="artist-embed"
+                        src="https://www.youtube.com/embed/nNE_vjP90_Y"
+                      ></iframe>
+                    </div>
+                    <p className="modal-description eight wide column">
+                      Training Season is an emerging Canadian alternative
+                      rap/hip hop group. Members include GP, King Caexar and
+                      Queenn. Training Season's music incorporates elements of
+                      trap, R&B/soul, acoustic bass-lines, jazzy samples and
+                      explores a variety of provocative and personal themes,
+                      relating to dark romanticism, melancholy and depression.
+                      Our sound is influenced by west coast, old school hip hop,
+                      atl and Japanese Anime.
                     </p>
                   </div>
-
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
-                    style={{ marginBottom: 10 }}
-                  />
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
-                    style={{ marginBottom: 10 }}
-                  />
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
-                    style={{ marginBottom: 10 }}
-                  />
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
-                    style={{ marginBottom: 10 }}
-                  />
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
-                    style={{ marginBottom: 10 }}
-                  />
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
-                    style={{ marginBottom: 10 }}
-                  />
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/paragraph.png"
-                    style={{ marginBottom: 10 }}
-                  />
-                  <Image src="https://react.semantic-ui.com/images/wireframe/paragraph.png" />
                 </Modal.Description>
               </Modal.Content>
-              <Modal.Actions>
-                <Button onClick={() => setOpen(false)} primary>
-                  Proceed <Icon name="chevron right" />
-                </Button>
-              </Modal.Actions>
             </div>
           </TransitionModal>
         </div>
@@ -110,5 +80,12 @@ const Artists = () => {
     </div>
   );
 };
+/*
+<Modal.Actions>
+<Button onClick={() => setOpen(false)} primary>
+Proceed <Icon name="chevron right" />
+</Button>
+</Modal.Actions>
+*/
 
 export default Artists;

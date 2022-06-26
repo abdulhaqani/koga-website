@@ -19,27 +19,38 @@
   width: 100%;
 }
 
-.artistModal {
-  background: #333;
+.artist-modal {
+  background: #171717;
 }
 
-.modalDescription {
-  margin-left: 5%;
-  margin-right: 5%;
+.modal-description {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.modalDescContainer {
+.artist-modal-description-container {
   margin: auto;
-  width: 80%;
-  min-width: 500px;
+  width: 100%;
+  min-width: 100px;
   text-align: justify;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: medium;
-  font-weight: 500;
 }
 
-.modalDescTitle {
+.artist-modal-title {
   font-size: x-large;
   font-family: 'Montserrat', sans-serif;
-  padding: 2%;
+  padding-top: 2%;
+}
+
+.modal-header-container {
+  width: 100%;
+  background: #000;
+  margin-bottom: 5%;
+}
+
+.artist-embed {
+  width: 80%;
+  height: 30vh;
+  border: none;
 }
