@@ -24,18 +24,15 @@
 }
 
 .modal-description {
-  padding-top: 5%;
-  padding-bottom: 5%;
   background-color: #222;
-  margin-bottom: 5%;
   border-radius: 3%;
   border-style: solid;
   border-color: #888;
   border-width: 1px;
+  padding-bottom: 5%;
 }
 
 .artist-modal-description-container {
-  margin: auto;
   width: 100%;
   min-width: 100px;
   text-align: justify;
@@ -51,13 +48,34 @@
   text-decoration: underline;
 }
 
+.artist-modal-vide-title {
+  font-size: large;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  text-decoration: underline;
+  margin-bottom: 2%;
+}
+
 .modal-header-container {
   width: 100%;
   background: #000;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .artist-embed {
   width: 80%;
   border: none;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
