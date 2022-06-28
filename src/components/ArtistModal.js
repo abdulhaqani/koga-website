@@ -17,7 +17,7 @@ const ArtistModal = (props) => {
         open={open}
         trigger={
           <img
-            src={antagonist}
+            src={props.ArtistImage}
             className="artist-image modal"
             alt="antagonist"
           />
@@ -27,33 +27,23 @@ const ArtistModal = (props) => {
           <Modal.Header></Modal.Header>
 
           <Modal.Content image scrolling>
-            <h1 className="artist-modal-title">Training Season</h1>
+            <h1 className="artist-modal-title">{props.ArtistName}</h1>
             <div className="modal-header-container">
-              <Image size="large" src={antagonist} wrapped />
+              <Image size="large" src={props.ArtistImage} wrapped />
             </div>
 
             <Modal.Description>
               <div className="artist-modal-description-container ui grid">
                 <div className="one wide column"></div>
                 <div className="six wide column center">
-                  <h3 className="artist-modal-vide-title">Newest release</h3>
+                  <h3 className="artist-modal-video-title">Newest release</h3>
                   <div className="video-container">
-                    <iframe
-                      className="artist-embed"
-                      src="https://www.youtube.com/embed/nNE_vjP90_Y"
-                    />
+                    <iframe className="artist-embed" src={props.ArtistVideo} />
                   </div>
                 </div>
                 <div className="one wide column"></div>
                 <p className="modal-description eight wide column">
-                  Training Season is an emerging Canadian alternative rap/hip
-                  hop group. Members include GP, King Caexar and Queenn.
-                  Training Season's music incorporates elements of trap,
-                  R&B/soul, acoustic bass-lines, jazzy samples and explores a
-                  variety of provocative and personal themes, relating to dark
-                  romanticism, melancholy and depression. Our sound is
-                  influenced by west coast, old school hip hop, atl and Japanese
-                  Anime.
+                  {props.ArtistDescription}
                 </p>
                 <div></div>
               </div>
