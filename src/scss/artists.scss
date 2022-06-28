@@ -9,13 +9,13 @@
   flex-direction: row;
   width: 45%;
   min-width: 500px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ddd;
   margin-top: 5%;
 }
 
 .artist-image {
+  border-radius: 2%;
+  border-style: solid;
+  border-width: 1px;
   width: 100%;
 }
 
