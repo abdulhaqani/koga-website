@@ -44,11 +44,11 @@ const Artists = () => {
                 <Modal.Description>
                   <div className="artist-modal-description-container ui grid">
                     <div className="eight wide column center">
-                      <h1>Recent release</h1>
+                      <h1 className="artist-modal-title">Newest release</h1>
                       <iframe
                         className="artist-embed"
                         src="https://www.youtube.com/embed/nNE_vjP90_Y"
-                      ></iframe>
+                      />
                     </div>
                     <p className="modal-description eight wide column">
                       Training Season is an emerging Canadian alternative
@@ -61,6 +61,8 @@ const Artists = () => {
                       atl and Japanese Anime.
                     </p>
                   </div>
+                  <br />
+                  <br />
                 </Modal.Description>
               </Modal.Content>
             </div>
