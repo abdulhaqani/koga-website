@@ -35,14 +35,14 @@ const ArtistModal = (props) => {
             <Modal.Description>
               <div className="artist-modal-description-container ui grid">
                 <div className="one wide column"></div>
-                <div className="six wide column center">
-                  <h3 className="artist-modal-video-title">Newest release</h3>
+                <div className="five wide column center">
                   <div className="video-container">
+                    <h3 className="artist-modal-video-title">Newest release</h3>
                     <iframe className="artist-embed" src={props.ArtistVideo} />
                   </div>
                 </div>
                 <div className="one wide column"></div>
-                <p className="modal-description eight wide column">
+                <p className="modal-description nine wide column">
                   {props.ArtistDescription}
                 </p>
                 <div></div>
