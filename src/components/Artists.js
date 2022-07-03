@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ArtistModal from './ArtistModal';
-import { Modal, Image, Button, Icon } from 'semantic-ui-react';
-import { TransitionModal } from 'semantic-ui-react-transition-modal';
 import antagonist from '../public/antagonist-blurred.png';
 import '../scss/artists.scss';
 import '../scss/default.scss';
