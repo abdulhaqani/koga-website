@@ -12,51 +12,22 @@ const Videos = () => {
       <div className="navbar">
         <Header />
       </div>{' '}
-      <div className="videosContainer center ui grid">
-        <div className="two wide column">left</div>
-        <div className="four wide column">
+      <div className="videos-container center ui grid">
+        <div className="two wide column"></div>
+        <div className="twelve wide column">
           <div className="video-container">
-            <VideoModal
-              SongImage={antagonist}
-              SongVideo={trainingSeasonVideo}
-            />
+            <iframe className="video-embed" src={trainingSeasonVideo} />
           </div>
           <div className="video-container">
-            <VideoModal
-              SongImage={antagonist}
-              SongVideo={trainingSeasonVideo}
-            />
-          </div>
-        </div>
-        <div className="four wide column">
-          <div className="video-container">
-            <VideoModal
-              SongImage={antagonist}
-              SongVideo={trainingSeasonVideo}
-            />
+            <iframe className="video-embed" src={trainingSeasonVideo} />
           </div>
           <div className="video-container">
-            <VideoModal
-              SongImage={antagonist}
-              SongVideo={trainingSeasonVideo}
-            />
+            <iframe className="video-embed" src={trainingSeasonVideo} />
+          </div>
+          <div className="video-container">
+            <iframe className="video-embed" src={trainingSeasonVideo} />
           </div>
         </div>
-        <div className="four wide column">
-          <div className="video-container">
-            <VideoModal
-              SongImage={antagonist}
-              SongVideo={trainingSeasonVideo}
-            />
-          </div>
-          <div className="video-container">
-            <VideoModal
-              SongImage={antagonist}
-              SongVideo={trainingSeasonVideo}
-            />
-          </div>
-        </div>
-        <div className="two wide column">right</div>
       </div>
       <Footer />
     </div>

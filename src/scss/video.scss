@@ -1,6 +1,12 @@
 .video-container {
   display: block;
-  padding-top: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.videos-container {
+  min-height: 100vh;
+  padding-bottom: 5%;
 }
 
 .video-image {
