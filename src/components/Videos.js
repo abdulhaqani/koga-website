@@ -9,9 +9,7 @@ const Videos = () => {
   const trainingSeasonVideo = 'https://www.youtube.com/embed/nNE_vjP90_Y';
   return (
     <div className="">
-      <div className="navbar">
-        <Header />
-      </div>{' '}
+      <Header />
       <div className="videos-container center ui grid">
         <div className="two wide column"></div>
         <div className="twelve wide column">

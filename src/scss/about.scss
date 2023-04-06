@@ -1,0 +1,33 @@
+.about-desc {
+  color: rgb(208, 208, 208);
+  margin: 5%;
+}
+
+.about-title {
+  color: rgb(208, 208, 208);
+  padding-top: 2%;
+}
+
+.quote {
+  margin: 5%;
+  border: 1%;
+  border-style: hidden;
+  border-radius: 15px;
+  background-color: grey;
+}
+
+.about-desc-quote {
+  margin: 5%;
+  padding: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about-desc-container {
+  height: 100vh;
+  overflow: auto;
+}
+
+.about-page {
+  background-color: rgb(64, 64, 64);
+}

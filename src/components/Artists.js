@@ -3,6 +3,9 @@ import Header from './Header';
 import Footer from './Footer';
 import ArtistModal from './ArtistModal';
 import antagonist from '../public/antagonist-blurred.png';
+import comeMyWay from '../public/comemyway.jpg';
+import tesla from '../public/tesla.png';
+import elevator from '../public/elevator.msc.png';
 import '../scss/artists.scss';
 import '../scss/default.scss';
 
@@ -28,9 +31,7 @@ const Artists = () => {
   const goodWinterVideo = 'https://www.youtube.com/embed/Mvq5o0abVSs';
   return (
     <div className="artists-wrap">
-      <div className="navbar">
-        <Header />
-      </div>
+      <Header />
       <div className="artists">
         <ArtistModal
           ArtistName={trainingSeasonName}
@@ -40,19 +41,19 @@ const Artists = () => {
         />
         <ArtistModal
           ArtistName={sonRobName}
-          ArtistImage={antagonist}
+          ArtistImage={tesla}
           ArtistDescription={sonRobDescription}
           ArtistVideo={sonRobVideo}
         />
         <ArtistModal
           ArtistName={greenbearddName}
-          ArtistImage={antagonist}
+          ArtistImage={comeMyWay}
           ArtistDescription={greenbearddDescription}
           ArtistVideo={greenbearddVideo}
         />
         <ArtistModal
           ArtistName={goodWinterName}
-          ArtistImage={antagonist}
+          ArtistImage={elevator}
           ArtistDescription={goodWinterDescription}
           ArtistVideo={goodWinterVideo}
         />
