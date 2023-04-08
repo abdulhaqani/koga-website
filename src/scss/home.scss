@@ -68,65 +68,31 @@
   height: 100%;
 }
 
-.nightingale-container {
+.music-release-container {
   @include new-releases();
 }
-
-.nightingale {
+.music-slider-bg {
   @include background-image();
-  background-image: url(../public/nightingale.jpg);
 }
 
-.antagonist-container {
-  @include new-releases();
-}
-.antagonist {
-  @include background-image();
-  background-image: url(../public/antagonist-blurred.png);
-}
-
-.elevator-msc-container {
-  @include new-releases();
-}
-
-.elevator-msc {
-  @include background-image();
-  background-image: url(../public/elevator.msc.png);
-}
-
-.tesla-container {
-  @include new-releases();
-}
-.tesla {
-  @include background-image();
-  background-image: url(../public/tesla.png);
-}
-
-.baraku-container {
-  @include new-releases();
-}
-
-.baraku {
-  @include background-image();
-  background-image: url(../public/baraku.jpeg);
-}
-
-.comemyway-container {
-  @include new-releases();
-}
-
-.comemyway {
-  @include background-image();
-  background-image: url(../public/comemyway.jpg);
-}
-
-.benchmark-container {
-  @include new-releases();
-}
-
-.benchmark {
-  @include background-image();
-  background-image: url(../public/benchmark.jpg);
+.artist-slider-bg {
+  /* Add the blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .new-releases-header {

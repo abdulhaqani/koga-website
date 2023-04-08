@@ -11,6 +11,7 @@ const Header = () => {
         <ul className="ui grid nav-links">
           <ul className="five wide column ui grid icons">
             <li className="two wide column"></li>
+
             <li className="nav-link three wide column">
               <Link to={'/'} className="nav-link">
                 <i class="fas fa-home"></i>
@@ -70,14 +71,15 @@ const Header = () => {
                 Videos
               </Link>
             </li>
-            <li className="three wide column center aligned nav-link">
-              <Link to={'/contact'} className="nav-link">
-                Contact
-              </Link>
-            </li>
+
             <li className="three wide column center aligned nav-link">
               <Link to={'/about'} className="nav-link">
                 About
+              </Link>
+            </li>
+            <li className="three wide column center aligned nav-link">
+              <Link to={'/contact'} className="nav-link">
+                Contact
               </Link>
             </li>
             <li className="three wide column center aligned nav-link">

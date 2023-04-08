@@ -7,11 +7,11 @@ const About = () => {
   return (
     <div className="about-page">
       <Header />
-      <div className="ui grid">
-        <div className="ui eight wide column">
+      <div className="ui grid about-grid">
+        <div className="about-container">
           <ArtistSlider />
         </div>
-        <div className="ui eight wide column about-desc-container">
+        <div className="about-container">
           <h1 className="about-title center">KOGA</h1>
           <p className="about-desc center">
             Koga, is an emerging Canadian hip hop collective, originating from

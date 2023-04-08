@@ -3,6 +3,19 @@
   margin: 5%;
 }
 
+.about-desc {
+  color: rgb(208, 208, 208);
+  margin: 5%;
+  padding-bottom: 5%;
+}
+
+.about-desc-quote {
+  margin: 5%;
+  padding: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .about-title {
   color: rgb(208, 208, 208);
   padding-top: 2%;
@@ -16,18 +29,23 @@
   background-color: grey;
 }
 
-.about-desc-quote {
-  margin: 5%;
-  padding: 5%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.about-desc-container {
+.about-container {
+  @media (min-width: 826px) {
+    overflow: auto;
+    width: 50%;
+  }
   height: 100vh;
-  overflow: auto;
+
+  @media (max-width: 825px) {
+    width: 100%;
+    height: fit-content;
+  }
 }
 
 .about-page {
   background-color: rgb(64, 64, 64);
+}
+
+.about-grid {
+  padding-top: 14px !important;
 }

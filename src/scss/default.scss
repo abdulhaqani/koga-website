@@ -11,7 +11,6 @@
 }
 
 @mixin background-image {
-  background-image: url(../public/gpsaga.jpg);
   /* Add the blur effect */
   backdrop-filter: blur(8px);
   -webkit-filter: blur(8px);

@@ -9,113 +9,34 @@ import comemyway from '../public/comemyway.jpg';
 import benchmark from '../public/benchmark.jpg';
 import '../scss/home.scss';
 import '../scss/default.scss';
+import SliderImage from './SliderImage';
 
 const ArtistSlider = () => {
-  const [autoplay, setAutoplay] = useState(false);
+  const [autoplay, setAutoplay] = useState(true);
   let settings = {
     dots: true,
     infinite: true,
     speed: 1500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 1000,
+    slidesToScroll: 1000,
     fade: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 6500,
     cssEase: 'linear',
     pauseOnHover: true,
+    autoplay: true,
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      autoplay ? setAutoplay(false) : setAutoplay(true);
-    }, 3000);
+    setTimeout(() => {}, 100);
     return;
   }, [autoplay]);
 
   return (
     <Slider {...settings} autoplay={autoplay}>
-      <div className="baraku-container">
-        <div className="baraku"></div>
-        <a
-          href="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={baraku} className="new-releases-image" alt="baraku" />
-        </a>
-      </div>
-      <div className="comemyway-container">
-        <div className="comemyway"></div>
-        <a
-          href="https://open.spotify.com/track/2zPEqch058WqgylDBwfj5p?si=31e488c2e1b347f7"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={comemyway} className="new-releases-image" alt="comemyway" />
-        </a>
-      </div>
-      <div className="benchmark-container">
-        <div className="benchmark"></div>
-        <a
-          href="https://open.spotify.com/track/0Lc4R9b0AZFSYafNwm0As7?si=22d6c997779d4578"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={benchmark} className="new-releases-image" alt="benchmark" />
-        </a>
-      </div>
-      <div className="antagonist-container">
-        <div className="antagonist"></div>
-        <a
-          href="https://open.spotify.com/track/0VDpB5eaIRcwehxljFR882?si=3d922911a22841fc"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={antagonist}
-            className="new-releases-image"
-            alt="antagonist"
-          />
-        </a>
-      </div>
-
-      <div className="tesla-container">
-        <div className="tesla"></div>
-        <a
-          href="https://open.spotify.com/track/0rOaZsCdEmPzdXDmyNfENI?si=d71291c31de44522"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={tesla} className="new-releases-image" alt="tesla" />
-        </a>
-      </div>
-      <div className="elevator-msc-container">
-        <div className="elevator-msc"></div>
-        <a
-          href="https://open.spotify.com/track/6TXDvYkGSvMLRKtAm8qFgD?si=0e07347d70744d56"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={elevatorMsc}
-            className="new-releases-image"
-            alt="elevator.msc"
-          />
-        </a>
-      </div>
-      <div className="nightingale-container">
-        <div className="nightingale"></div>
-        <a
-          href="https://open.spotify.com/track/0qCKgI1nQFAeFne0CtXdoN?si=de3a8f6d150f4a97"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={nightingale}
-            className="new-releases-image"
-            alt="nightingale"
-          />
-        </a>
-      </div>
+      <SliderImage name="baraku" image={baraku} />
+      <SliderImage name="comemyway" image={comemyway} />
+      <SliderImage name="benchmark" image={benchmark} />
+      <SliderImage name="tesla" image={tesla} />
     </Slider>
   );
 };

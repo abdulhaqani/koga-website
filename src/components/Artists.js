@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ArtistModal from './ArtistModal';
@@ -10,7 +10,6 @@ import '../scss/artists.scss';
 import '../scss/default.scss';
 
 const Artists = () => {
-  const [open, setOpen] = React.useState(false);
   const trainingSeasonName = 'Training Season';
   const trainingSeasonDescription =
     "Training Season is an emerging Canadian alternative rap/hip  hop group. Members include GP, King Caexar and Queenn.  Training Season's music incorporates elements of trap,  R&B/soul, acoustic bass-lines, jazzy samples and explores a  variety of provocative and personal themes, relating to dark  romanticism, melancholy and depression. Our sound is  influenced by west coast, old school hip hop, atl and Japanese  Anime.";
@@ -62,12 +61,5 @@ const Artists = () => {
     </div>
   );
 };
-/*
-<Modal.Actions>
-<Button onClick={() => setOpen(false)} primary>
-Proceed <Icon name="chevron right" />
-</Button>
-</Modal.Actions>
-*/
 
 export default Artists;
