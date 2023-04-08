@@ -18,15 +18,36 @@
 .nav-link:hover {
   font-weight: 800;
   font-size: x-large;
-  color: #ddd;
+  color: #ddd !important;
   transition: all 500ms;
 }
 
 .icons {
   top: -1.5vh;
+  min-width: 170px;
 }
 
 .nav-container {
   z-index: 100;
   height: 100%;
+}
+
+.mobile-menu-dropdown {
+  display: block !important;
+  color: #ddd !important;
+  float: right;
+}
+
+@media only screen and (min-width: 800px) {
+  .mobile-menu-dropdown {
+    display: none !important;
+  }
+}
+
+.menu.transition.visible {
+  background-color: #121212 !important;
+}
+
+.ui.pointing.dropdown > .menu:after {
+  background-color: #121212 !important;
 }
