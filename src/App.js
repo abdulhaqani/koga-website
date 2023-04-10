@@ -8,6 +8,7 @@ import Home from './components/Home';
 import About from './components/About.js';
 import Artists from './components/Artists';
 import Videos from './components/Videos';
+import TrainingSeason from './components/TrainingSeason';
 import Contact from './components/Contact';
 import Merch from './components/Merch.js';
 // scss
@@ -22,6 +23,11 @@ const App = () => {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/videos" element={<Videos />} />
           <Route exact path="/artists" element={<Artists />} />
+          <Route
+            exact
+            path="/artists/TrainingSeason"
+            element={<TrainingSeason />}
+          />
           <Route exact path="/merch" element={<Merch />} />
         </Routes>
       </Fragment>

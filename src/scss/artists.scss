@@ -82,3 +82,49 @@
   width: 100%;
   height: 100%;
 }
+
+.artists-wrap {
+  height: 100vh;
+}
+
+.artist-bg {
+  background-image: url('../public/koga_fire.jpg');
+  /* Add the blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+.artist-label-wrap {
+  height: 100vh;
+}
+
+.artist-label {
+  color: #ddd;
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: 100;
+  font-family: monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 48px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 52.8px;
+  font-variant: small-caps;
+}
