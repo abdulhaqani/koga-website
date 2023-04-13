@@ -1,16 +1,19 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // react components
-import Home from './components/Home';
-import About from './components/About.js';
-import Artists from './components/Artists';
-import Videos from './components/Videos';
-import TrainingSeason from './components/TrainingSeason';
-import Contact from './components/Contact';
-import Merch from './components/Merch.js';
+import Home from "./components/Home";
+import About from "./components/About.js";
+import Artists from "./components/Artists";
+import Videos from "./components/Videos";
+import TrainingSeason from "./components/TrainingSeason";
+import Contact from "./components/Contact";
+import Merch from "./components/Merch.js";
+import SonRob from "./components/SonRob";
+import Greenbeardd from "./components/Greenbeardd";
+import GoodxWinter from "./components/GoodxWinter";
 // scss
 
 const App = () => {
@@ -28,6 +31,9 @@ const App = () => {
             path="/artists/TrainingSeason"
             element={<TrainingSeason />}
           />
+          <Route exact path="/artists/SonRob" element={<SonRob />} />
+          <Route exact path="/artists/Greenbeardd" element={<Greenbeardd />} />
+          <Route exact path="/artists/GoodxWinter" element={<GoodxWinter />} />
           <Route exact path="/merch" element={<Merch />} />
         </Routes>
       </Fragment>

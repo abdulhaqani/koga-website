@@ -1,17 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./Header";
-import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import ArtistModal from "./ArtistModal";
-import antagonist from "../public/antagonist-blurred.png";
-import comeMyWay from "../public/comemyway.jpg";
-import tesla from "../public/tesla.png";
-import elevator from "../public/elevator.msc.png";
-import "../scss/artists.scss";
-import "../scss/default.scss";
-
-const Artists = () => {
-  const [open, setOpen] = React.useState(false);
+import ArtistSlider from "./ArtistSlider";
+import "../scss/about.scss";
+const GoodxWinter = () => {
   const trainingSeasonName = "Training Season";
   const trainingSeasonDescription =
     "Training Season is an emerging Canadian alternative rap/hip  hop group. Members include GP, King Caexar and Queenn.  Training Season's music incorporates elements of trap,  R&B/soul, acoustic bass-lines, jazzy samples and explores a  variety of provocative and personal themes, relating to dark  romanticism, melancholy and depression. Our sound is  influenced by west coast, old school hip hop, atl and Japanese  Anime.";
@@ -31,41 +23,60 @@ const Artists = () => {
   const goodWinterDescription = "Good winter description";
   const goodWinterVideo = "https://www.youtube.com/embed/Mvq5o0abVSs";
   return (
-    <div className="artists-wrap">
+    <div className="about-page">
       <Header />
-      <div className="artist-bg"></div>
-      <div className="ui grid artist-label-wrap">
-        <div className="eight wide column artist-name-container">
-          <div className="artist-label-container">
-            <Link to={"/artists/TrainingSeason"} className="">
-              <h1 className="artist-label">Training Season</h1>
-            </Link>
-          </div>
+      <div className="ui grid about-grid">
+        <div className="about-container">
+          <ArtistSlider />
         </div>
-        <div className="eight wide column artist-name-container">
-          <div className="artist-label-container">
-            <Link to={"/artists/SonRob"} className="">
-              <h1 className="artist-label">Son Rob</h1>
-            </Link>
+        <div className="about-container">
+          <h1 className="about-title center">KOGA</h1>
+          <p className="about-desc center">
+            Koga, is an emerging Canadian hip hop collective, originating from
+            Ottawa.
+          </p>
+          <p className="about-desc center">
+            Koga features a diverse roster with unique and multi talented
+            individuals including collaborative acts like Training Season, Son
+            Rob, Greenbeardd, Goodwinter & Bizzaro.
+          </p>
+          <p className="about-desc center">
+            The group draws inspiration from their love of all things culture,
+            from music & anime to film & fashion. Our artists come from very
+            diverse backgrounds with unique & personal experiences that are
+            often reflected in their works.
+          </p>
+          <p className="about-desc center">
+            Koga studios takes pride in our artists' ability to create trendy
+            music however; full pieces are delivered. Every track is more than a
+            track and it connects every character, alter ego, occurrence and
+            every song together has a larger, inter-connected story.
+          </p>
+          <div className="quote">
+            <p className="about-desc-quote center">
+              “We want to create a world that is limitless and doesn't box us
+              into any category. The purpose of our ‘music’ is to really push
+              the boundaries we presently use to define it and to leave a
+              lasting impression on art and culture.”
+            </p>
           </div>
-        </div>
-        <div className="eight wide column artist-name-container">
-          <div className="artist-label-container">
-            <Link to={"/artists/Greenbeardd"} className="">
-              <h1 className="artist-label">Greenbeardd</h1>
-            </Link>
+
+          <div className="quote">
+            <p className="about-desc-quote center">
+              “Advancing the art form is paramount to us. We want to push what
+              has been done even further than anyone else. The world is in dire
+              need of truth right now and there is nothing truer than the
+              pursuit of what is meaningful. Music isn’t just sound, but a
+              vehicle for our lived experiences, our pain, our joy, our
+              humanity”
+            </p>
           </div>
-        </div>
-        <div className="eight wide column artist-name-container">
-          <div className="artist-label-container">
-            <Link to={"/artists/GoodxWinter"} className="">
-              <h1 className="artist-label">GoodxWinter</h1>
-            </Link>
-          </div>
+          <p className="about-desc center">Welcome to the Koga Universe.</p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
 
-export default Artists;
+export default GoodxWinter;

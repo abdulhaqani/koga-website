@@ -1,15 +1,14 @@
-import React from 'react';
-import '../scss/footer.scss';
-import '../scss/default.scss';
+import React from "react";
+import "../scss/footer.scss";
+import "../scss/default.scss";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <h3 className="center">Koga Studios ©</h3>
+      <h3 className="center footer-content">Koga Studios ©</h3>
       <br />
-      <div className="ui grid">
-        <div className="seven wide column"></div>
-        <div className="two wide column ui grid">
+      <div className="center footer-content">
+        <div className="center ui grid ">
           <div className="four wide column center">
             <a
               className="nav-link"
@@ -51,7 +50,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="six wide column"></div>
       </div>
     </div>
   );
