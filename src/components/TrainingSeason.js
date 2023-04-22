@@ -3,7 +3,8 @@ import Header from './Header';
 import Footer from './Footer';
 import ArtistSlider from './ArtistSlider';
 import '../scss/about.scss';
-const TrainingSeason = () => {
+const TrainingSeason = (props) => {
+  const { artistName, description, video } = props;
   const trainingSeasonName = 'Training Season';
   const trainingSeasonDescription =
     "Training Season is an emerging Canadian alternative rap/hip  hop group. Members include GP, King Caexar and Queenn.  Training Season's music incorporates elements of trap,  R&B/soul, acoustic bass-lines, jazzy samples and explores a  variety of provocative and personal themes, relating to dark  romanticism, melancholy and depression. Our sound is  influenced by west coast, old school hip hop, atl and Japanese  Anime.";
@@ -30,7 +31,7 @@ const TrainingSeason = () => {
           <ArtistSlider />
         </div>
         <div className="about-container">
-          <h1 className="about-title center">KOGA</h1>
+          <h1 className="about-title center">{trainingSeasonName}</h1>
           <p className="about-desc center">
             Koga, is an emerging Canadian hip hop collective, originating from
             Ottawa.
