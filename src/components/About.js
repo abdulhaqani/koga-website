@@ -1,7 +1,5 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
-import ArtistSlider from './ArtistSlider';
 import '../scss/about.scss';
 const About = () => {
   const artistName = 'KOGA';
@@ -10,7 +8,7 @@ const About = () => {
   const desc2 =
     'Koga features a diverse roster with unique and multi talented individuals including collaborative acts like Training Season, Son Rob, Greenbeardd, Goodwinter & Bizzaro.';
   const desc3 =
-    'The group draws inspiration from their love of all things culture,from music & anime to film & fashion. Our artists come from very diverse backgrounds with unique & personal experiences that are often reflected in their works.';
+    'The group draws inspiration from their love of all things culture, from music & anime to film & fashion. Our artists come from very diverse backgrounds with unique & personal experiences that are often reflected in their works.';
   const desc4 =
     "Koga studios takes pride in our artists' ability to create trendy music however; full pieces are delivered. Every track is more than a track and it connects every character, alter ego, occurrence and every song together has a larger, inter-connected story.";
   const desc5 =
@@ -23,20 +21,17 @@ const About = () => {
   return (
     <div className="about-page">
       <Header />
-      <div className="ui grid about-grid">
-        <div className="row center full-width">
-          <div className="full-width center about-title">{welcome}</div>
-        </div>
-        <div className="row">
-          <div className="full-width center about-desc">
+      <div className="about-grid">
+        <div className="row full-width">
+          <div className="center about-desc">
             {desc1} {desc2} {desc3} {desc4} {desc5} {desc6}
           </div>
         </div>
-        <div className="about-container">
-          <h1 className="about-title center"></h1>
+        <div className="row center full-width">
+          <div className="full-width center about-title">{welcome}</div>
         </div>
+        <div className="row about-bg">content</div>
       </div>
-      <Footer />
     </div>
   );
 };

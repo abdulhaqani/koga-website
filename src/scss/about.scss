@@ -1,6 +1,6 @@
 .about-desc {
+  padding: 2% 0%;
   margin: 0% 5%;
-  padding-bottom: 2%;
   font-size: 14px;
   text-align: justify;
 }
@@ -12,11 +12,11 @@
 }
 
 .about-title {
-  padding-top: 2%;
   margin-left: 5%;
   font-size: large;
   text-align: justify;
   font-family: 'Trebuchet MS';
+  margin-bottom: 2%;
 }
 
 .quote {
@@ -42,8 +42,26 @@
 
 .about-page {
   background-color: rgb(224, 224, 224);
+  height: 100vh;
+  min-width: 500px;
+  overflow-x: auto;
 }
 
 .about-grid {
   padding-top: 14px !important;
+  min-width: 500px;
+}
+
+.about-bg {
+  background-image: url('../public/koga_fire.jpg');
+  /* Add the blur effect */
+  width: 100vw;
+  min-height: 70vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
 }
