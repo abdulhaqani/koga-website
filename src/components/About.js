@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import kogaMusic from '../public/koga_music_cropped.png';
 import '../scss/about.scss';
 const About = () => {
   const artistName = 'KOGA';
@@ -21,16 +22,18 @@ const About = () => {
   return (
     <div className="about-page">
       <Header />
-      <div className="about-grid">
-        <div className="row full-width">
-          <div className="center about-desc">
-            {desc1} {desc2} {desc3} {desc4} {desc5} {desc6}
-          </div>
+      <img src={kogaMusic} alt="" className="about-image" />
+
+      <div className="row full-width about-desc-container">
+        <div className="center about-desc">
+          {desc1} {desc2} {desc3}
         </div>
-        <div className="row center full-width">
-          <div className="full-width center about-title">{welcome}</div>
+        <div className="center about-desc">
+          {desc4} {desc5} {desc6}
         </div>
-        <div className="row about-bg">content</div>
+      </div>
+      <div className="row center full-width">
+        <div className="full-width center about-title">{welcome}</div>
       </div>
     </div>
   );
