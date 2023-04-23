@@ -15,17 +15,17 @@ const Artist = (props) => {
           <ArtistSlider />
         </div>
         <div className="artist-container">
-          <h1 className="about-title center">{artistName}</h1>
-          <p className="about-desc center">{description}</p>
-          <p className="about-desc center">{description2}</p>
-          <p className="about-desc center">{description3}</p>
+          <h1 className="artist-title center">{artistName}</h1>
+          <p className="artist-desc center">{description}</p>
+          <p className="artist-desc center">{description2}</p>
+          <p className="artist-desc center">{description3}</p>
           <div className="artist-video-container center">
             <iframe className="artist-video-embed" src={video} />
           </div>
 
           {quote ? (
             <div className="quote">
-              <p className="about-desc-quote center">
+              <p className="artist-desc-quote center">
                 “{quote}” - {artistName}
               </p>
             </div>
