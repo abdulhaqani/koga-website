@@ -13,8 +13,25 @@ const Artists = () => {
       <div className="ui grid artist-label-wrap">
         <div className="eight wide column artist-name-container">
           <div className="artist-label-container">
-            <Link to={'/artists/TrainingSeason'} className="">
+            <Link
+              to={'/artists/TrainingSeason'}
+              className="artist-link"
+              id="ts"
+            >
               <h1 className="artist-label">Training Season</h1>
+            </Link>
+            <br />
+            <Link
+              to={'/artists/TrainingSeason/kingCaexar'}
+              className="artist-link"
+            >
+              <h2 className="artist-label">King Caexar</h2>
+            </Link>
+            <Link to={'/artists/TrainingSeason/GP'} className="artist-link">
+              <h2 className="artist-label">GP</h2>
+            </Link>
+            <Link to={'/artists/TrainingSeason/Queenn'} className="artist-link">
+              <h2 className="artist-label">Queenn</h2>
             </Link>
           </div>
         </div>

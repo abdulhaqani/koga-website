@@ -8,7 +8,6 @@ import Home from './components/Home';
 import About from './components/About.js';
 import Artists from './components/Artists';
 import Videos from './components/Videos';
-import TrainingSeason from './components/TrainingSeason';
 import Contact from './components/Contact';
 import Merch from './components/Merch.js';
 import Artist from './components/Artist';
@@ -31,6 +30,10 @@ There's no hope with income thinner than my silhouette; \n\
 Alone at night I swear to god; \
 Vituperate a sinners life that's cursed, destined for hara-kiri death";
   const trainingSeasonVideo = 'https://www.youtube.com/embed/nNE_vjP90_Y';
+
+  const trainingSeasonspotify = '';
+  const trainingSeasonIg = '';
+  const trainingSeasonFb = '';
 
   const sonRobName = 'Son Rob';
   const sonRobDescription1 =
@@ -82,6 +85,51 @@ Running rampant until the piggies start the locking up";
           <Route
             exact
             path="/artists/TrainingSeason"
+            element={
+              <Artist
+                artistName={trainingSeasonName}
+                description={trainingSeasonDescription}
+                description2={trainingSeasonDescription2}
+                description3={trainingSeasonDescription3}
+                quote={trainingSeasonQuote}
+                video={trainingSeasonVideo}
+              />
+            }
+          />
+
+          <Route
+            exact
+            path="/artists/TrainingSeason/KingCaexar"
+            element={
+              <Artist
+                artistName={trainingSeasonName}
+                description={trainingSeasonDescription}
+                description2={trainingSeasonDescription2}
+                description3={trainingSeasonDescription3}
+                quote={trainingSeasonQuote}
+                video={trainingSeasonVideo}
+              />
+            }
+          />
+
+          <Route
+            exact
+            path="/artists/TrainingSeason/GP"
+            element={
+              <Artist
+                artistName={trainingSeasonName}
+                description={trainingSeasonDescription}
+                description2={trainingSeasonDescription2}
+                description3={trainingSeasonDescription3}
+                quote={trainingSeasonQuote}
+                video={trainingSeasonVideo}
+              />
+            }
+          />
+
+          <Route
+            exact
+            path="/artists/TrainingSeason/Queenn"
             element={
               <Artist
                 artistName={trainingSeasonName}

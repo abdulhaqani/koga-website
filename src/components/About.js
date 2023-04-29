@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div className="about-page">
       <Header />
-      <img src={kogaMusic} alt="" className="about-image" />
+      <img src={kogaMusic} alt="" className="full-width" />
 
       <div className="row full-width about-desc-container">
         <div className="center about-desc">

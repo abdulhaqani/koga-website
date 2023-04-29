@@ -5,8 +5,17 @@ import Footer from './Footer';
 import '../scss/artists.scss';
 
 const Artist = (props) => {
-  const { artistName, description, description2, description3, video, quote } =
-    props;
+  const {
+    artistName,
+    description,
+    description2,
+    description3,
+    video,
+    quote,
+    fbLink,
+    igLink,
+    spotifyLink,
+  } = props;
   return (
     <div>
       <Header />
@@ -23,15 +32,53 @@ const Artist = (props) => {
             <iframe className="artist-video-embed" src={video} />
           </div>
 
-          {quote ? (
-            <div className="quote">
-              <p className="artist-desc-quote center">
-                “{quote}” - {artistName}
-              </p>
+          <div className="center footer-content">
+            <div className="center ui grid ">
+              {igLink ? (
+                <div className="four wide column center">
+                  <a
+                    className="nav-link"
+                    href={igLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </div>
+              ) : (
+                <br />
+              )}
+              {fbLink ? (
+                <div className="four wide column center">
+                  <a
+                    className="nav-link"
+                    href={fbLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </div>
+              ) : (
+                <br />
+              )}
+
+              {spotifyLink ? (
+                <div className="four wide column center">
+                  <a
+                    className="nav-link"
+                    href={spotifyLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </div>
+              ) : (
+                <br />
+              )}
             </div>
-          ) : (
-            <br />
-          )}
+          </div>
         </div>
       </div>
       <Footer />
