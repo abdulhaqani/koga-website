@@ -1,31 +1,3 @@
-.about-desc {
-  padding-top: 2%;
-  margin: 0% 20%;
-  font-size: 14px;
-  text-align: justify;
-}
-
-.about-desc-quote {
-  margin: 5%;
-  padding: 5%;
-  font-family: 'Trebuchet MS';
-}
-
-.about-title {
-  margin: 2% 20%;
-  font-size: large;
-  text-align: justify;
-  font-family: 'Trebuchet MS';
-}
-
-.quote {
-  margin: 5%;
-  border: 1%;
-  border-style: hidden;
-  border-radius: 15px;
-  background-color: grey;
-}
-
 .about-container {
   @media (min-width: 826px) {
     overflow: auto;

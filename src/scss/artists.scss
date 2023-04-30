@@ -214,3 +214,39 @@ h2.artist-label:hover {
   color: rgb(208, 208, 208);
   padding-top: 2%;
 }
+
+.about-desc {
+  padding-top: 2%;
+  margin: 0% 20%;
+  font-size: 14px;
+  text-align: justify;
+  max-width: 1000px;
+  @media (min-width: 1440px) {
+    overflow: auto;
+    margin: auto;
+  }
+}
+
+.about-desc-quote {
+  margin: 5%;
+  padding: 5%;
+  font-family: 'Trebuchet MS';
+}
+
+.about-title {
+  margin: 2% 20%;
+  font-size: large;
+  text-align: justify;
+  font-family: 'Trebuchet MS';
+  @media (min-width: 1440px) {
+    margin: 2% calc((100vw - 1000px) / 2);
+  }
+}
+
+.quote {
+  margin: 5%;
+  border: 1%;
+  border-style: hidden;
+  border-radius: 15px;
+  background-color: grey;
+}

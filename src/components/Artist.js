@@ -32,6 +32,18 @@ const Artist = (props) => {
             <iframe className="artist-video-embed" src={video} />
           </div>
 
+          {quote ? (
+            <div className="quote">
+              <p
+                className="artist-desc-quote "
+                style={{ whiteSpace: 'pre-line' }}
+              >
+                “{quote}” - {artistName}
+              </p>
+            </div>
+          ) : (
+            <br />
+          )}
           <div className="center footer-content">
             <div className="center ui grid ">
               {igLink ? (
