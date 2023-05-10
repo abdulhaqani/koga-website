@@ -11,7 +11,8 @@ import '../scss/home.scss';
 import '../scss/default.scss';
 import SliderImage from './SliderImage';
 
-const ArtistSlider = () => {
+const ArtistSlider = (props) => {
+  const { image1, image2, image3 } = props;
   const [autoplay, setAutoplay] = useState(true);
   let settings = {
     dots: true,
@@ -33,6 +34,9 @@ const ArtistSlider = () => {
 
   return (
     <Slider {...settings} autoplay={autoplay}>
+      {image1 ? <SliderImage image={image1} /> : null}
+      {image2 ? <SliderImage image={image2} /> : null}
+      {image3 ? <SliderImage image={image3} /> : null}
       <SliderImage name="baraku" image={baraku} />
       <SliderImage name="comemyway" image={comemyway} />
       <SliderImage name="benchmark" image={benchmark} />

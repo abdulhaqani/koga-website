@@ -41,9 +41,7 @@ const Artist = (props) => {
                 “{quote}” - {artistName}
               </p>
             </div>
-          ) : (
-            <br />
-          )}
+          ) : null}
           <div className="center footer-content">
             <div className="center ui grid ">
               {igLink ? (
@@ -57,9 +55,7 @@ const Artist = (props) => {
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </div>
-              ) : (
-                <br />
-              )}
+              ) : null}
               {fbLink ? (
                 <div className="four wide column center">
                   <a
@@ -71,9 +67,7 @@ const Artist = (props) => {
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </div>
-              ) : (
-                <br />
-              )}
+              ) : null}
 
               {spotifyLink ? (
                 <div className="four wide column center">
@@ -86,9 +80,7 @@ const Artist = (props) => {
                     <i class="fab fa-facebook-square"></i>
                   </a>
                 </div>
-              ) : (
-                <br />
-              )}
+              ) : null}
             </div>
           </div>
         </div>
