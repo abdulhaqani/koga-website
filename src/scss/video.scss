@@ -14,3 +14,13 @@
   text-align: left;
   margin: auto;
 }
+
+.videos-video-container {
+}
+
+.video-grid {
+  padding: 2% !important;
+  min-width: 400px !important;
+  @media (min-width: 800px) {
+  }
+}
