@@ -52,7 +52,7 @@ const Artist = (props) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
                   </a>
                 </div>
               ) : null}
@@ -77,7 +77,7 @@ const Artist = (props) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-spotify"></i>
                   </a>
                 </div>
               ) : null}
