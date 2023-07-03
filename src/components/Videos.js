@@ -12,19 +12,23 @@ const Videos = () => {
   const videos = [
     {
       id: 'nNE_vjP90_Y',
+      label: 'Gone - Queenn (Training Season)',
     },
     {
       id: 'nNE_vjP90_Y',
+      label: 'Gone',
     },
     {
       id: 'nNE_vjP90_Y',
+      label: 'Gone',
     },
     {
       id: 'nNE_vjP90_Y',
+      label: 'Gone',
     },
   ];
   return (
-    <div className="">
+    <div className="video-bg">
       <Header />
       {/* <div className="videos-container center ui grid">
         <div className="two wide column"></div>

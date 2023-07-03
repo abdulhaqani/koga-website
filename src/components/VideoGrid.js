@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Embed } from 'semantic-ui-react';
-//import '../scss/video.scss';
+import '../scss/default.scss';
+import '../scss/video.scss';
 
 const VideoGrid = ({ videos }) => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -21,6 +22,7 @@ const VideoGrid = ({ videos }) => {
   }, []); // Empty dependency array to run the effect only once
 
   const desiredWidth = 400; // Width of each video
+  const desiredHeight = 225; // Width of each video
 
   const calculateColumns = () => {
     // Calculate the number of columns based on screen width
@@ -30,7 +32,17 @@ const VideoGrid = ({ videos }) => {
 
   const gridColumns = calculateColumns();
 
-  console.log(gridColumns);
+  const calculateVideoWidth = () => {
+    if (screenWidth < 800) {
+      return '98%'; // Set video width to 100% when screen width is less than desired width
+    } else if (screenWidth < 1600) {
+      return '50%'; // Use the default width when screen width is greater than or equal to desired width
+    } else {
+      return '33%';
+    }
+  };
+
+  console.log(screenWidth);
   return (
     <Grid columns={2} stackable>
       {videos.map((video) => (
@@ -38,18 +50,25 @@ const VideoGrid = ({ videos }) => {
           key={video.id}
           className="video-grid"
           style={{
-            padding: '2%',
             minWidth: `${desiredWidth}px`,
-            width: '100%',
+            minHeight: `${desiredHeight}px`,
+            width: calculateVideoWidth(),
+            padding: '2%',
+            margin: 'auto',
           }}
         >
+          <h1 className="video-label center">{video.label}</h1>
           <Embed
             id={video.id}
             source="youtube"
             active={true}
             iframe={{
               allowFullScreen: true,
-              style: { width: '100%' },
+              style: {
+                width: '100%',
+                borderStyle: 'inset',
+                borderWidth: '1px',
+              },
             }}
           />
         </Grid.Column>
