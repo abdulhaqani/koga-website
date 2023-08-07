@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import kogaMusic from '../public/koga_music_cropped.png';
+import Footer from './Footer';
 import '../scss/about.scss';
 import '../scss/default.scss';
 
@@ -24,6 +25,9 @@ const Contact = () => {
       </div>
       <div className="row center full-width">
         <div className="full-width center contact-title">{contactEmail}</div>
+      </div>
+      <div className="merch-footer">
+        <Footer iconColor={'#222'} />
       </div>
     </div>
   );

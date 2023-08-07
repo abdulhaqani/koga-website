@@ -1,11 +1,16 @@
-import React from "react";
-import "../scss/footer.scss";
-import "../scss/default.scss";
+import React from 'react';
+import '../scss/footer.scss';
+import '../scss/default.scss';
 
-const Footer = () => {
+const Footer = ({ iconColor }) => {
+  if (!iconColor) {
+    iconColor = '#ddd';
+  }
   return (
     <div className="footer">
-      <h3 className="center footer-content">Koga Studios ©</h3>
+      <h3 className="center footer-content" style={{ color: iconColor }}>
+        Koga Studios ©
+      </h3>
       <br />
       <div className="center footer-content">
         <div className="center ui grid ">
@@ -16,7 +21,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-instagram"></i>
+              <i class="fab fa-instagram" style={{ color: iconColor }}></i>
             </a>
           </div>
           <div className="four wide column center">
@@ -26,7 +31,10 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-facebook-square"></i>
+              <i
+                class="fab fa-facebook-square"
+                style={{ color: iconColor }}
+              ></i>
             </a>
           </div>
           <div className="four wide column center">
@@ -36,7 +44,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-youtube"></i>
+              <i class="fab fa-youtube" style={{ color: iconColor }}></i>
             </a>
           </div>
           <div className="four wide column center">
@@ -46,7 +54,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-spotify"></i>
+              <i class="fab fa-spotify" style={{ color: iconColor }}></i>
             </a>
           </div>
         </div>

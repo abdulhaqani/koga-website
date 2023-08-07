@@ -1,18 +1,31 @@
-import React from "react";
-import "../scss/home.scss";
-import "../scss/default.scss";
-import baraku from "../public/baraku.jpeg";
-import antagonist from "../public/antagonist-blurred.png";
-import elevatorMsc from "../public/elevator.msc.png";
-import nightingale from "../public/nightingale.jpg";
-import tesla from "../public/tesla.png";
-import Lman from "../public/Lman.jpg";
-import misadv from "../public/misadv.jpg";
-import comemyway from "../public/comemyway.jpg";
-import benchmark from "../public/benchmark.jpg";
-import HomeMusic from "./HomeMusic";
-import MusicSlider from "./MusicSlider";
-import SongModal from "./SongModal";
+import React from 'react';
+import '../scss/home.scss';
+import '../scss/default.scss';
+import baraku from '../public/baraku.jpeg';
+import antagonist from '../public/antagonist-blurred.png';
+import elevatorMsc from '../public/elevator.msc.png';
+import nightingale from '../public/nightingale.jpg';
+import tesla from '../public/tesla.png';
+import Lman from '../public/Lman.jpg';
+import misadv from '../public/misadv.jpg';
+import comemyway from '../public/comemyway.jpg';
+import gone from '../public/gone.jpg';
+import benchmark from '../public/benchmark.jpg';
+import HomeMusic from './HomeMusic';
+import MusicSlider from './MusicSlider';
+import SongModal from './SongModal';
+import doors from '../public/Doors.png';
+import echelon from '../public/Echelon.JPEG';
+import go from '../public/GO.png';
+import lallaby from '../public/Lallaby.JPEG';
+import nangaDef from '../public/Nanga_def.png';
+import sneakers from '../public/sneakers.png';
+import oak from '../public/Oak.PNG';
+import stokeOnATuesday from '../public/stoke_on_a_tuesday.png';
+import wto from '../public/W.T.O.png';
+import perpetual from '../public/perpetual.JPG';
+import whoAmI from '../public/who_am_i.png';
+import whyWait from '../public/why_wait.png';
 
 const HomeBody = () => {
   return (
@@ -38,46 +51,92 @@ const HomeBody = () => {
         </div>
         <div className="ui four row grid track-component-grid">
           <div className="ui five wide column upcoming-grid">
+            <HomeMusic ImageName={wto} SongLink="https://song.link/WTO" />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic ImageName={nangaDef} SongLink="https://song.link/ndef" />
+          </div>
+          <div className="ui five wide column upcoming-grid">
             <HomeMusic
-              ImageName={baraku}
-              SongLink="https://open.spotify.com/track/2PWGTh2fAqaIXeu6maMq8s?si=4511af2174d84188"
+              ImageName={whoAmI}
+              SongLink="https://song.link/GREENBEARDDWHOAMI"
             />
           </div>
           <div className="ui five wide column upcoming-grid">
             <HomeMusic
+              ImageName={whyWait}
+              SongLink="https://song.link/Whywait"
+            />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic
+              ImageName={perpetual}
+              SongLink="https://song.link/perpetual"
+            />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic
+              ImageName={lallaby}
+              SongLink="https://song.link/Lallabys"
+            />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic
+              ImageName={gone}
+              SongLink="https://song.link/QueenGone"
+            />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic
+              ImageName={sneakers}
+              SongLink="https://song.link/SNEAKERS"
+            />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic
+              ImageName={stokeOnATuesday}
+              SongLink="https://song.link/STOKE"
+            />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic ImageName={doors} SongLink="https://song.link/doors" />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic ImageName={go} SongLink="https://song.link/SonRobGo" />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic
+              ImageName={echelon}
+              SongLink="https://song.link/ECHELON"
+            />
+          </div>
+
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic
               ImageName={antagonist}
-              SongLink="https://open.spotify.com/track/0VDpB5eaIRcwehxljFR882?si=3d922911a22841fc"
+              SongLink="https://song.link/antagonist"
             />
           </div>
           <div className="ui five wide column upcoming-grid">
             <HomeMusic
               ImageName={elevatorMsc}
-              SongLink="https://open.spotify.com/track/6TXDvYkGSvMLRKtAm8qFgD?si=0e07347d70744d56"
+              SongLink="https://song.link/elevator"
             />
           </div>
           <div className="ui five wide column upcoming-grid">
             <HomeMusic
               ImageName={benchmark}
-              SongLink="https://open.spotify.com/track/0Lc4R9b0AZFSYafNwm0As7?si=22d6c997779d4578"
+              SongLink="https://song.link/Benchmark"
             />
           </div>
           <div className="ui five wide column upcoming-grid">
             <HomeMusic
               ImageName={comemyway}
-              SongLink="https://open.spotify.com/track/2zPEqch058WqgylDBwfj5p?si=31e488c2e1b347f7"
+              SongLink="https://song.link/C0MEWYWAY"
             />
           </div>
           <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={tesla}
-              SongLink="https://open.spotify.com/track/0rOaZsCdEmPzdXDmyNfENI?si=d71291c31de44522"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={nightingale}
-              SongLink="https://open.spotify.com/track/0qCKgI1nQFAeFne0CtXdoN?si=de3a8f6d150f4a97"
-            />
+            <HomeMusic ImageName={tesla} SongLink="https://song.link/TESLA" />
           </div>
           <div className="ui five wide column upcoming-grid">
             <HomeMusic
@@ -89,6 +148,12 @@ const HomeBody = () => {
             <HomeMusic
               ImageName={Lman}
               SongLink="https://open.spotify.com/album/5vlIHAnKxJhAbNWFHU3o0V?si=QZH76oS0T-iqYzFivMQVpw"
+            />
+          </div>
+          <div className="ui five wide column upcoming-grid">
+            <HomeMusic
+              ImageName={oak}
+              SongLink="https://soundcloud.com/trainingseason/sets/oak-by-training-season"
             />
           </div>
           <div className="ui sixteen wide column"></div>

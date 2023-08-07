@@ -1,13 +1,21 @@
 .footer {
   margin-top: auto;
-  background-color: #121212;
-  background-image: radial-gradient(#444, #333, #222, #111);
   color: #ddd;
+  backdrop-filter: blur(4px);
+  // background-color: #ddd;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  z-index: 100;
+  position: relative;
 }
 
 .footer-content {
   width: 256px;
   margin: auto;
+}
+
+.merch-footer {
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
 }

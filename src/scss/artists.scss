@@ -97,7 +97,8 @@
   -ms-filter: blur(8px);
   filter: blur(8px);
   width: 100vw;
-  height: calc(100vh - 64px);
+  height: calc(110vh - 64px);
+  min-height: 460px;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -167,6 +168,7 @@ h2.artist-label:hover {
   width: 50%;
   text-align: center;
   vertical-align: middle;
+  min-height: 200px;
 }
 
 .artist-video-container {

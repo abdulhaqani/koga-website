@@ -1,7 +1,10 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import kogaMusic from '../public/koga_music_cropped.png';
 import '../scss/about.scss';
+import '../scss/footer.scss';
+
 const About = () => {
   const artistName = 'KOGA';
   const desc1 =
@@ -23,6 +26,7 @@ const About = () => {
       <div className="row center full-width">
         <div className="full-width center about-title">{welcome}</div>
       </div>
+      <Footer iconColor={'#222'} />
     </div>
   );
 };
