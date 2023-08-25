@@ -1,6 +1,7 @@
 import React from 'react';
 import '../scss/home.scss';
 import '../scss/default.scss';
+import Fade from 'react-reveal/Fade';
 import baraku from '../public/baraku.jpeg';
 import antagonist from '../public/antagonist-blurred.png';
 import elevatorMsc from '../public/elevator.msc.png';
@@ -26,139 +27,208 @@ import wto from '../public/W.T.O.png';
 import perpetual from '../public/perpetual.JPG';
 import whoAmI from '../public/who_am_i.png';
 import whyWait from '../public/why_wait.png';
+import {
+  wtoDesc,
+  nangaDefDesc,
+  whoAmIDesc,
+  whyWaitDesc,
+  perpetualDesc,
+  lallabyDesc,
+  goneDesc,
+  sneakersDesc,
+  stokeDesc,
+  doorsDesc,
+  goDesc,
+  elevatorDesc,
+  echelonDesc,
+  antagonistDesc,
+  benchmarkDesc,
+  comeMyWayDesc,
+  barakuDesc,
+  teslaDesc,
+  misadvDesc,
+  lManDesc,
+  oakDesc,
+} from '../public/constants';
 
 const HomeBody = () => {
   return (
     <div className="home-image-container">
-      <div className="ui raised fluid card">
-        <MusicSlider />
-      </div>
+      <Fade delay={250}>
+        <div className="ui raised fluid card">
+          <MusicSlider />
+        </div>
+      </Fade>
       <SongModal />
-      <div className="grid-container">
-        <div className="playlist">
-          <div className="ui raised fluid card playlist-card">
-            <iframe
-              src="https://open.spotify.com/embed/playlist/1H7VjWekFdAanBNTdRnsEl?utm_source=generator"
-              width="100%"
-              height="100%"
-              frameBorder="1"
-              allowfullscreen="1"
-              allowtransparency="true"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              title="spotify-link"
-            ></iframe>
+      <Fade>
+        <div className="grid-container">
+          <div className="playlist">
+            <div className="ui raised fluid card playlist-card">
+              <iframe
+                src="https://open.spotify.com/embed/playlist/1H7VjWekFdAanBNTdRnsEl?utm_source=generator"
+                width="100%"
+                height="100%"
+                frameBorder="1"
+                allowfullscreen="1"
+                allowtransparency="true"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                title="spotify-link"
+              ></iframe>
+            </div>
           </div>
-        </div>
-        <div className="ui four row grid track-component-grid">
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic ImageName={wto} SongLink="https://song.link/WTO" />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic ImageName={nangaDef} SongLink="https://song.link/ndef" />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={whoAmI}
-              SongLink="https://song.link/GREENBEARDDWHOAMI"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={whyWait}
-              SongLink="https://song.link/Whywait"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={perpetual}
-              SongLink="https://song.link/perpetual"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={lallaby}
-              SongLink="https://song.link/Lallabys"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={gone}
-              SongLink="https://song.link/QueenGone"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={sneakers}
-              SongLink="https://song.link/SNEAKERS"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={stokeOnATuesday}
-              SongLink="https://song.link/STOKE"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic ImageName={doors} SongLink="https://song.link/doors" />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic ImageName={go} SongLink="https://song.link/SonRobGo" />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={echelon}
-              SongLink="https://song.link/ECHELON"
-            />
-          </div>
+          <div className="ui four row grid track-component-grid">
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={wto}
+                SongLink="https://song.link/WTO"
+                SongDescription={wtoDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={nangaDef}
+                SongLink="https://song.link/ndef"
+                SongDescription={nangaDefDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={whoAmI}
+                SongLink="https://song.link/GREENBEARDDWHOAMI"
+                SongDescription={whoAmIDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={whyWait}
+                SongLink="https://song.link/Whywait"
+                SongDescription={whyWaitDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={perpetual}
+                SongLink="https://song.link/perpetual"
+                SongDescription={perpetualDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={lallaby}
+                SongLink="https://song.link/Lallabys"
+                SongDescription={lallabyDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={gone}
+                SongLink="https://song.link/QueenGone"
+                SongDescription={goneDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={sneakers}
+                SongLink="https://song.link/SNEAKERS"
+                SongDescription={sneakersDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={stokeOnATuesday}
+                SongLink="https://song.link/STOKE"
+                SongDescription={stokeDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={doors}
+                SongLink="https://song.link/doors"
+                SongDescription={doorsDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={go}
+                SongLink="https://song.link/SonRobGo"
+                SongDescription={goDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={echelon}
+                SongLink="https://song.link/ECHELON"
+                SongDescription={echelonDesc}
+              />
+            </div>
 
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={antagonist}
-              SongLink="https://song.link/antagonist"
-            />
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={antagonist}
+                SongLink="https://song.link/antagonist"
+                SongDescription={antagonistDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={elevatorMsc}
+                SongLink="https://song.link/elevator"
+                SongDescription={elevatorDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={benchmark}
+                SongLink="https://song.link/Benchmark"
+                SongDescription={benchmarkDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={comemyway}
+                SongLink="https://song.link/C0MEWYWAY"
+                SongDescription={comeMyWayDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={baraku}
+                SongLink="https://album.link/baraku"
+                SongDescription={barakuDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={tesla}
+                SongLink="https://song.link/TESLA"
+                SongDescription={teslaDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={misadv}
+                SongLink="https://open.spotify.com/album/2MB4yaCKAmImF7UzdcUM9O?si=212OEehBSB-cIbDo5JWw5A"
+                SongDescription={misadvDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={Lman}
+                SongLink="https://open.spotify.com/album/5vlIHAnKxJhAbNWFHU3o0V?si=QZH76oS0T-iqYzFivMQVpw"
+                SongDescription={lManDesc}
+              />
+            </div>
+            <div className="ui five wide column upcoming-grid">
+              <HomeMusic
+                ImageName={oak}
+                SongLink="https://soundcloud.com/trainingseason/sets/oak-by-training-season"
+                SongDescription={oakDesc}
+              />
+            </div>
+            <div className="ui sixteen wide column"></div>
           </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={elevatorMsc}
-              SongLink="https://song.link/elevator"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={benchmark}
-              SongLink="https://song.link/Benchmark"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={comemyway}
-              SongLink="https://song.link/C0MEWYWAY"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic ImageName={tesla} SongLink="https://song.link/TESLA" />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={misadv}
-              SongLink="https://open.spotify.com/album/2MB4yaCKAmImF7UzdcUM9O?si=212OEehBSB-cIbDo5JWw5A"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={Lman}
-              SongLink="https://open.spotify.com/album/5vlIHAnKxJhAbNWFHU3o0V?si=QZH76oS0T-iqYzFivMQVpw"
-            />
-          </div>
-          <div className="ui five wide column upcoming-grid">
-            <HomeMusic
-              ImageName={oak}
-              SongLink="https://soundcloud.com/trainingseason/sets/oak-by-training-season"
-            />
-          </div>
-          <div className="ui sixteen wide column"></div>
         </div>
-      </div>
+      </Fade>
     </div>
   );
 };

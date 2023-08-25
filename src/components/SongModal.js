@@ -1,12 +1,24 @@
 import React, { useState } from 'react';
-import { Button, Header, Image, Modal } from 'semantic-ui-react';
-import baraku from '../public/baraku.jpeg';
+import { Button, Image, Modal } from 'semantic-ui-react';
 
 import '../scss/songmodal.scss';
 import '../scss/default.scss';
+import '../scss/artists.scss';
+
 const SongModal = (props) => {
+  const openSongLink = () => {
+    window.open(SongLink, '_blank'); // Open the link in a new tab/window
+    setOpen(false); // Close the modal
+  };
+
   const [open, setOpen] = useState(false);
 
+  const { ModalTrigger, ImageName, SongDescription, SongLink } = props;
+
+  let lines = [];
+  if (SongDescription && typeof SongDescription === 'string') {
+    lines = SongDescription.split('\n');
+  }
   return (
     <Modal
       dimmer="blurring"
@@ -14,46 +26,34 @@ const SongModal = (props) => {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={props.ModalTrigger}
+      trigger={ModalTrigger}
     >
       <Modal.Content
         className="scrolling content dark-theme-bg"
         style={{ background: '#121212', color: '#dddddd', padding: '0%' }}
       >
         <div className="modal-image-container">
-          <a href={props.SongLink} target="_blank" rel="noopener noreferrer">
-            <Image
-              src={props.ImageName}
-              alt="modal-image"
-              className="modal-image"
-            />
+          <a href={SongLink} target="_blank" rel="noopener noreferrer">
+            <Image src={ImageName} alt="modal-image" className="modal-image" />
           </a>
         </div>
 
         <Modal.Description>
-          <h2 className="center">
-            Song description Song descriptionSong description Song description
-            Song description Song description Song description Song description
-            Song description Song descriptionSong description Song
-            descriptionSong description Song descriptionSong description Song
-            descriptionSong descriptionSong description Song description Song
-            description Song descriptionSong descriptionSong descriptionSong
-            description Song description Song descriptionSong descriptionSong
-            description Song descriptionSong descriptionSong descriptionSong
-            description Song descriptionSong description Song description Song
-            descriptionSong description Song description Song descriptionSong
-            description Song descriptionSong descriptionSong description Song
-            descriptionSong descriptionSong description Song descriptionSong
-            description Song descriptionSong description Song description Song
-            description
-          </h2>
+          <p className="song-desc">
+            {lines.map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions style={{ 'background-color': '#121212' }}>
         <Button color="black" onClick={() => setOpen(false)}>
           Close
         </Button>
-        <Button color="green" onClick={() => setOpen(false)}>
+        <Button color="green" onClick={openSongLink}>
           Listen to Song
         </Button>
       </Modal.Actions>

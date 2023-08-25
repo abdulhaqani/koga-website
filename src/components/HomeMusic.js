@@ -5,6 +5,7 @@ import '../scss/default.scss';
 import SongModal from './SongModal';
 
 const HomeMusic = (props) => {
+  const { ImageName, SongLink, SongDescription, ModalTrigger } = props;
   return (
     <div>
       <div className="upcoming-tracks">
@@ -12,13 +13,14 @@ const HomeMusic = (props) => {
           <SongModal
             ModalTrigger={
               <Image
-                src={props.ImageName}
+                src={ImageName}
                 alt="upcoming"
                 className="upcoming-release"
               />
             }
-            ImageName={props.ImageName}
-            SongLink={props.SongLink}
+            ImageName={ImageName}
+            SongLink={SongLink}
+            SongDescription={SongDescription}
           />
         </div>
       </div>

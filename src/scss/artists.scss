@@ -235,16 +235,6 @@ h2.artist-label:hover {
   font-family: 'Trebuchet MS';
 }
 
-.about-title {
-  margin: 2% 20%;
-  font-size: large;
-  text-align: justify;
-  font-family: 'Trebuchet MS';
-  @media (min-width: 1440px) {
-    margin: 2% calc((100vw - 1000px) / 2);
-  }
-}
-
 .quote {
   margin: 5%;
   border: 1%;

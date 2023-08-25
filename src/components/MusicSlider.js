@@ -35,12 +35,12 @@ const MusicSlider = () => {
 
   return (
     <Slider {...settings}>
+      <SliderLink image={wto} name="wto" link="https://song.link/WTO" />
       <SliderLink
         image={nangaDef}
         name="nangaDef"
         link="https://song.link/ndef"
       />
-      <SliderLink image={wto} name="wto" link="https://song.link/WTO" />
       <SliderLink
         image={whyWait}
         name="whyWait"

@@ -102,3 +102,30 @@ export const goodWinterDescription =
 export const goodWinterDescription2 =
   'GoodxWinter is also involved with a previous koga partner, the fashion brand in "Hikikmori Race Club", where you can expect further direct collaborations with Koga in the future';
 export const goodWinterVideo = 'https://www.youtube.com/embed/Mvq5o0abVSs';
+
+export const wtoDesc =
+  'Artist: Greenbeardd feat King Caexar from Training Season \nYear: 2023';
+export const nangaDefDesc =
+  'Artist: Training Season (King Caexar) feat Mistcash \nYear: 2023';
+export const whoAmIDesc = 'Artist: Greenbeardd \nYear: 2022';
+export const whyWaitDesc = 'Artist: Son Rob feat Greenbeardd \nYear: 2023';
+export const perpetualDesc = 'Artist: Greenbeardd \nYear: 2022';
+export const lallabyDesc = 'Artist: Training Season (Queenn) \nYear: 2023';
+export const goneDesc = 'Artist: Queenn \nYear: 2022';
+export const sneakersDesc = 'Artist: Son Rob \nYear: 2022';
+export const stokeDesc = 'Artist: Son Rob \nYear: 2023';
+export const doorsDesc = 'Artist: Son Rob \nYear: 2022';
+export const goDesc = 'Artist: Son Rob \nYear: 2022';
+export const echelonDesc = 'Artist: Greenbeardd \nYear: 2023';
+export const antagonistDesc =
+  'Artist: Training Season (King Caexar) \nYear: 2020';
+export const barakuDesc =
+  'Artist: Training Season (King Caexar) feat Son Rob\nYear: 2021';
+export const elevatorDesc = 'Artist: Training Season (GP) \nYear: 2021';
+export const benchmarkDesc = 'Artist: Greenbeardd \nYear: 2021';
+export const comeMyWayDesc =
+  'Artist: Greenbeardd feat King Caexar from Training Season\nYear: 2021';
+export const teslaDesc = 'Artist: Son Rob \nYear: 2021';
+export const misadvDesc = 'Artist: Son Rob, Greenbeardd \nYear: 2019';
+export const lManDesc = 'Artist: Training Season \nYear: 2017';
+export const oakDesc = 'Artist: Training Season \nYear: 2015';
