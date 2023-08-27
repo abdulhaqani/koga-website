@@ -11,7 +11,10 @@ const Footer = ({ iconColor, bg }) => {
   }
   return (
     <div className="footer" style={{ backgroundColor: bg }}>
-      <h3 className="center footer-content" style={{ color: iconColor }}>
+      <h3
+        className="center footer-content"
+        style={{ color: iconColor, marginTop: '2%' }}
+      >
         Koga Studios ©
       </h3>
       <br />
