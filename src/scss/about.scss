@@ -16,7 +16,9 @@
   min-height: 100vh;
   height: fit-content;
   min-width: 500px;
-  overflow-x: auto;
+  @media (max-width: 500px) {
+    overflow-x: auto;
+  }
 }
 
 .about-grid {

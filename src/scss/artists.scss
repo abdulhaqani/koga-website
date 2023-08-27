@@ -184,7 +184,9 @@ h2.artist-label:hover {
 }
 
 .artist-container {
-  background: radial-gradient(rgb(64, 64, 64), rgb(16, 16, 16));
+  // background: radial-gradient(rgb(64, 64, 64), rgb(16, 16, 16));
+  background-color: #222;
+
   @media (min-width: 826px) {
     overflow: auto;
     width: 50%;
@@ -241,4 +243,8 @@ h2.artist-label:hover {
   border-style: hidden;
   border-radius: 15px;
   background-color: grey;
+}
+
+.artist-page {
+  background-color: #222;
 }

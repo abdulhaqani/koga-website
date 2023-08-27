@@ -17,7 +17,7 @@ const Artist = (props) => {
     spotifyLink,
   } = props;
   return (
-    <div>
+    <div className="artist-page">
       <Header />
       <div className="ui grid about-grid">
         <div className="artist-container">
@@ -85,7 +85,7 @@ const Artist = (props) => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer bg="#232323" />
     </div>
   );
 };

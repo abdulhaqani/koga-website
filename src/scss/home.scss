@@ -57,9 +57,12 @@
   padding-bottom: 2%;
   height: 100%;
 
+  border-radius: 0%;
   @media (max-width: 825px) {
-    width: 100%;
+    width: 96%;
     height: 75vh;
+    float: none;
+    margin: 2%;
   }
 }
 
@@ -78,6 +81,7 @@
 
 .playlist-card {
   height: 100%;
+  border-radius: 0.75rem !important;
 }
 
 .music-release-container {

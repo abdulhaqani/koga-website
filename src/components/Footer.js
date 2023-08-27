@@ -2,12 +2,15 @@ import React from 'react';
 import '../scss/footer.scss';
 import '../scss/default.scss';
 
-const Footer = ({ iconColor }) => {
+const Footer = ({ iconColor, bg }) => {
+  if (!bg) {
+    bg = 'transparent';
+  }
   if (!iconColor) {
     iconColor = '#ddd';
   }
   return (
-    <div className="footer">
+    <div className="footer" style={{ backgroundColor: bg }}>
       <h3 className="center footer-content" style={{ color: iconColor }}>
         Koga Studios ©
       </h3>

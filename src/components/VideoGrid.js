@@ -35,7 +35,7 @@ const VideoGrid = ({ videos }) => {
   const calculateVideoWidth = () => {
     if (screenWidth < 800) {
       return '98%'; // Set video width to 100% when screen width is less than desired width
-    } else if (screenWidth < 1600) {
+    } else if (screenWidth < 1400) {
       return '50%'; // Use the default width when screen width is greater than or equal to desired width
     } else {
       return '33%';
@@ -57,7 +57,7 @@ const VideoGrid = ({ videos }) => {
             margin: 'auto',
           }}
         >
-          <h1 className="video-label center">{video.label}</h1>
+          <p className="video-label center">{video.label}</p>
           <Embed
             id={video.id}
             source="youtube"

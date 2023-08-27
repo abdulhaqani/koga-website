@@ -1,9 +1,19 @@
 .footer {
-  margin-top: auto;
+  margin-top: 3vh;
   color: #ddd;
   backdrop-filter: blur(4px);
-  // background-color: #ddd;
-  padding-top: 3vh;
+  background-color: #ddd;
+  padding-top: 0vh;
+  padding-bottom: 3vh;
+  z-index: 100;
+  position: relative;
+}
+
+.footer2 {
+  margin-top: 3vh;
+  color: #ddd;
+  backdrop-filter: blur(4px);
+  padding-top: 0vh;
   padding-bottom: 3vh;
   z-index: 100;
   position: relative;

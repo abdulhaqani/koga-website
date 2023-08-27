@@ -22,7 +22,7 @@ const Merch = () => {
           Coming soon ...
         </h1>
         <div className="merch-footer">
-          <Footer iconColor={'#222'} />
+          <Footer bg={'#DFDFDF'} iconColor={'#222'} />
         </div>
       </div>
     </div>

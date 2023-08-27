@@ -27,7 +27,7 @@ const Contact = () => {
         <div className="full-width center contact-title">{contactEmail}</div>
       </div>
       <div className="merch-footer">
-        <Footer iconColor={'#222'} />
+        <Footer bg={'#DFDFDF'} iconColor={'#222'} />
       </div>
     </div>
   );

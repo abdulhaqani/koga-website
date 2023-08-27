@@ -26,7 +26,7 @@ const About = () => {
       <div className="row center full-width">
         <div className="full-width center about-title">{welcome}</div>
       </div>
-      <Footer iconColor={'#222'} />
+      <Footer bg={'#DFDFDF'} iconColor={'#222'} />
     </div>
   );
 };

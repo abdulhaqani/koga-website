@@ -13,7 +13,7 @@ export const Home = () => {
       <div className="home-body-container">
         <HomeBody />
       </div>
-      <Footer />
+      <Footer bg="#232323" />
     </div>
   );
 };
