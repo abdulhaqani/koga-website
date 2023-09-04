@@ -2,6 +2,24 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import trainingSeasonImage1 from './public/trseason.jpg';
+import trainingSeasonImage2 from './public/trseason2.jpg';
+import trainingSeasonImage3 from './public/gp_and_caexar.jpg';
+import trainingSeasonImage4 from './public/gp_and_queenn.jpg';
+import trainingSeasonImage5 from './public/caexar_and_queenn.jpg';
+import caexarImage1 from './public/caexar.jpg';
+import caexarImage2 from './public/caexar2.jpg';
+import gpImage1 from './public/gp_1.jpg';
+import gpImage2 from './public/gp_2.jpg';
+import queenImage1 from './public/queenn.webp';
+import greenImage1 from './public/Green_1.jpg';
+import greenImage2 from './public/green2.jpg';
+import greenImage3 from './public/green_3.jpeg';
+import sonRobImage1 from './public/son_rob.jpg';
+import sonRobImage3 from './public/son_rob3.jpg';
+import sonRobImage5 from './public/son_rob5.jpg';
+import goodWinterImage1 from './public/goodWinter.jpg';
+
 import {
   trainingSeasonName,
   trainingSeasonDescription,
@@ -97,6 +115,9 @@ const App = () => {
                 description2={trainingSeasonDescription2}
                 description3={trainingSeasonDescription3}
                 video={trainingSeasonVideo}
+                image1={trainingSeasonImage1}
+                image2={trainingSeasonImage2}
+                image3={trainingSeasonImage3}
               />
             }
           />
@@ -112,6 +133,9 @@ const App = () => {
                 description3={kingCaexarDescription3}
                 quote={kingCaexarQuote}
                 video={kingCaexarVideo}
+                image1={caexarImage1}
+                image2={caexarImage2}
+                image3={trainingSeasonImage5}
               />
             }
           />
@@ -127,6 +151,9 @@ const App = () => {
                 description3={gpDescription3}
                 quote={gpQuote}
                 video={gpVideo}
+                image1={gpImage1}
+                image2={gpImage2}
+                image3={trainingSeasonImage4}
               />
             }
           />
@@ -142,6 +169,9 @@ const App = () => {
                 description3={queennDescription3}
                 quote={queennQuote}
                 video={queennVideo}
+                image1={queenImage1}
+                image2={trainingSeasonImage4}
+                image3={trainingSeasonImage5}
               />
             }
           />
@@ -156,6 +186,9 @@ const App = () => {
                 description3={greenbearddDescription3}
                 quote={greenBearddQuote}
                 video={greenbearddVideo}
+                image1={greenImage1}
+                image2={greenImage2}
+                image3={greenImage3}
               />
             }
           />
@@ -170,6 +203,9 @@ const App = () => {
                 description3={sonRobDescription3}
                 quote={sonRobQuote}
                 video={sonRobVideo}
+                image1={sonRobImage1}
+                image2={sonRobImage5}
+                image3={sonRobImage3}
               />
             }
           />
@@ -182,6 +218,7 @@ const App = () => {
                 description={goodWinterDescription}
                 description2={goodWinterDescription2}
                 video={goodWinterVideo}
+                image1={goodWinterImage1}
               />
             }
           />

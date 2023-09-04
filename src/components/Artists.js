@@ -25,7 +25,7 @@ const Artists = () => {
               to={'/artists/TrainingSeason/kingCaexar'}
               className="artist-link"
             >
-              <h2 className="artist-label">King Caexar</h2>
+              <h2 className="artist-label">Caexar</h2>
             </Link>
             <Link to={'/artists/TrainingSeason/GP'} className="artist-link">
               <h2 className="artist-label">GP</h2>

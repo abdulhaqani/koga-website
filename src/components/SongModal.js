@@ -39,7 +39,7 @@ const SongModal = (props) => {
         </div>
 
         <Modal.Description>
-          <p className="song-desc">
+          <p className="song-desc center">
             {lines.map((line, index) => (
               <React.Fragment key={index}>
                 {line}

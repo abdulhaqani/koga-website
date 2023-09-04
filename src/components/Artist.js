@@ -15,13 +15,16 @@ const Artist = (props) => {
     fbLink,
     igLink,
     spotifyLink,
+    image1,
+    image2,
+    image3,
   } = props;
   return (
     <div className="artist-page">
       <Header />
       <div className="ui grid about-grid">
         <div className="artist-container">
-          <ArtistSlider />
+          <ArtistSlider image1={image1} image2={image2} image3={image3} />
         </div>
         <div className="artist-container">
           <h1 className="artist-title center">{artistName}</h1>

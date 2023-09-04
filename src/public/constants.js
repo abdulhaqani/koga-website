@@ -1,8 +1,8 @@
 export const trainingSeasonName = 'Training Season';
 export const trainingSeasonDescription =
-  "Training Season is an emerging Canadian alternative rap/hip  hop group. Members include GP, King Caexar and Queenn.  Training Season's music incorporates elements of trap,  R&B/soul, acoustic bass-lines, jazzy samples, rock and explores a  variety of provocative and personal themes, relating to dark  romanticism, melancholy and depression. Their sound is  influenced by west coast, old school hip hop, atl and Japanese  Anime.";
+  "Training Season is an emerging Canadian alternative rap/hip  hop group. Members include GP, Caexar and Queenn.  Training Season's music incorporates elements of trap,  R&B/soul, acoustic bass-lines, jazzy samples, rock and explores a  variety of provocative and personal themes, relating to dark  romanticism, melancholy and depression. Their sound is  influenced by west coast, old school hip hop, atl and Japanese  Anime.";
 export const trainingSeasonDescription2 =
-  "Each of the 3 artists bring their own unique sounds to the table, with King Caexar specializing in lyrical boom bap, funky trap, varied beat production and DOOM inspired lyricism. GP on the other hand specializes in a more funcy style of indie hip hop, soft rock, and at times harnessing his alter ego 'tempest' to demonstrate his own lyrical skills. Meanwhile Queen brings the whole group together which her powerful voice and hypnotic R&B vocals, while also contributing a unique flair in her hip hop verses";
+  "Each of the 3 artists bring their own unique sounds to the table, with Caexar specializing in lyrical boom bap, funky trap, varied beat production and DOOM inspired lyricism. GP on the other hand specializes in a more funcy style of indie hip hop, soft rock, and at times harnessing his alter ego 'tempest' to demonstrate his own lyrical skills. Meanwhile Queen brings the whole group together which her powerful voice and hypnotic R&B vocals, while also contributing a unique flair in her hip hop verses";
 export const trainingSeasonDescription3 =
   "Training season has multiple projects ranging from their debut mixtape 'Oak', to their thought provoking album 'Caexar saga: LMan', coupled with numerous singles, featured works and unique productions, all of which provide a different avenue to peer into the creative minds behind Training Season. Stay tuned for more :)";
 export const trainingSeasonVideo = 'https://www.youtube.com/embed/nNE_vjP90_Y';
@@ -11,11 +11,11 @@ export const trainingSeasonspotify =
 export const trainingSeasonInstagram = '';
 export const trainingSeasonAppleMusic = '';
 
-export const kingCaexarName = 'King Caexar';
+export const kingCaexarName = 'Caexar';
 export const kingCaexarDescription =
-  "King Caexar is the primary emcee of the group 'Training Season'. He demonstrates his lyrical skills throughout much of his discography, ranging from tracks like 'Antagonist' to his surprise release in 'Perfect' or his thought provoking 'Betelgeuse'. Caexar gathers much of his inspiration from things ranging from Japanese Anime, to movie OSTs, to artists such as the GZA, MF DOOM, tyler the creator, and 50 cent.";
+  "Caexar is the primary emcee of the group 'Training Season'. He demonstrates his lyrical skills throughout much of his discography, ranging from tracks like 'Antagonist' to his surprise release in 'Perfect' or his thought provoking 'Betelgeuse'. Caexar gathers much of his inspiration from things ranging from Japanese Anime, to movie OSTs, to artists such as the GZA, MF DOOM, tyler the creator, and 50 cent.";
 export const kingCaexarDescription2 =
-  "Caexar has created a world of characters through which he expressees his art. Interestingly, each of his projects create a world for those characters to live in, each with their own backstories, personalities and musical styles. Some of these characters he has made are; his base personality 'King Caexar', the shallow 'Julio Phuckboy', the dark 'Johan', and the psychotic Fat Albert.";
+  "Caexar has created a world of characters through which he expressees his art. Interestingly, each of his projects create a world for those characters to live in, each with their own backstories, personalities and musical styles. Some of these characters he has made are; his base personality 'Caexar', the shallow 'Julio Phuckboy', the dark 'Johan', and the psychotic Fat Albert.";
 export const kingCaexarDescription3 =
   "In order to develop further as an artist, Caexar has also delved deeply into music production. As such, Caexar has produced much of his own music, also producing for many of the other members of Koga. Which face will you see when you enter Caexar's world? Stay tuned to find out!";
 export const kingCaexarQuote =
@@ -104,9 +104,9 @@ export const goodWinterDescription2 =
 export const goodWinterVideo = 'https://www.youtube.com/embed/Mvq5o0abVSs';
 
 export const wtoDesc =
-  'Artist: Greenbeardd feat King Caexar from Training Season \nYear: 2023';
+  'Artist: Greenbeardd feat Caexar from Training Season \nYear: 2023';
 export const nangaDefDesc =
-  'Artist: Training Season (King Caexar) feat Mistcash \nYear: 2023';
+  'Artist: Training Season (Caexar) feat Mistcash \nYear: 2023';
 export const whoAmIDesc = 'Artist: Greenbeardd \nYear: 2022';
 export const whyWaitDesc = 'Artist: Son Rob feat Greenbeardd \nYear: 2023';
 export const perpetualDesc = 'Artist: Greenbeardd \nYear: 2022';
@@ -117,14 +117,13 @@ export const stokeDesc = 'Artist: Son Rob \nYear: 2023';
 export const doorsDesc = 'Artist: Son Rob \nYear: 2022';
 export const goDesc = 'Artist: Son Rob \nYear: 2022';
 export const echelonDesc = 'Artist: Greenbeardd \nYear: 2023';
-export const antagonistDesc =
-  'Artist: Training Season (King Caexar) \nYear: 2020';
+export const antagonistDesc = 'Artist: Training Season (Caexar) \nYear: 2020';
 export const barakuDesc =
-  'Artist: Training Season (King Caexar) feat Son Rob\nYear: 2021';
+  'Artist: Training Season (Caexar) feat Son Rob\nYear: 2021';
 export const elevatorDesc = 'Artist: Training Season (GP) \nYear: 2021';
 export const benchmarkDesc = 'Artist: Greenbeardd \nYear: 2021';
 export const comeMyWayDesc =
-  'Artist: Greenbeardd feat King Caexar from Training Season\nYear: 2021';
+  'Artist: Greenbeardd feat Caexar from Training Season\nYear: 2021';
 export const teslaDesc = 'Artist: Son Rob \nYear: 2021';
 export const misadvDesc = 'Artist: Son Rob, Greenbeardd \nYear: 2019';
 export const lManDesc = 'Artist: Training Season \nYear: 2017';

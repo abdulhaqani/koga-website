@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import baraku from '../public/baraku.jpeg';
-import antagonist from '../public/antagonist-blurred.png';
-import elevatorMsc from '../public/elevator.msc.png';
-import nightingale from '../public/nightingale.jpg';
-import tesla from '../public/tesla.png';
-import comemyway from '../public/comemyway.jpg';
-import benchmark from '../public/benchmark.jpg';
 import '../scss/home.scss';
 import '../scss/default.scss';
 import SliderImage from './SliderImage';
@@ -37,10 +30,6 @@ const ArtistSlider = (props) => {
       {image1 ? <SliderImage image={image1} /> : null}
       {image2 ? <SliderImage image={image2} /> : null}
       {image3 ? <SliderImage image={image3} /> : null}
-      <SliderImage name="baraku" image={baraku} />
-      <SliderImage name="comemyway" image={comemyway} />
-      <SliderImage name="benchmark" image={benchmark} />
-      <SliderImage name="tesla" image={tesla} />
     </Slider>
   );
 };

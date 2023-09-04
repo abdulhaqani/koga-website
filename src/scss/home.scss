@@ -174,11 +174,7 @@
 }
 
 .song-desc {
-  padding-left: 20%;
   font-size: large;
   text-align: justify;
   font-family: 'Trebuchet MS';
-  @media (min-width: 1440px) {
-    margin: 2% calc((100vw - 1000px) / 2);
-  }
 }
