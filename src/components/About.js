@@ -6,7 +6,6 @@ import '../scss/about.scss';
 import '../scss/footer.scss';
 
 const About = () => {
-  const artistName = 'KOGA';
   const desc1 =
     'Koga, is an emerging Canadian hip hop collective, originating from Ottawa. Koga features a diverse roster with unique and multi talented individuals including collaborative acts like Training Season, Son Rob, Greenbeardd, Goodwinter & Bizzaro. The group draws inspiration from their love of all things culture, from music & anime to film & fashion. Our artists come from very diverse backgrounds with unique & personal experiences that are often reflected in their works.';
   const desc2 =

@@ -32,7 +32,7 @@ const Artist = (props) => {
           <p className="artist-desc center">{description2}</p>
           <p className="artist-desc center">{description3}</p>
           <div className="artist-video-container center">
-            <iframe className="artist-video-embed" src={video} />
+            <iframe title="video" className="artist-video-embed" src={video} />
           </div>
 
           {quote ? (

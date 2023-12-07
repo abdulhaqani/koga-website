@@ -5,7 +5,7 @@ import '../scss/default.scss';
 import SongModal from './SongModal';
 
 const HomeMusic = (props) => {
-  const { ImageName, SongLink, SongDescription, ModalTrigger } = props;
+  const { ImageName, SongLink, SongDescription } = props;
   return (
     <div>
       <div className="upcoming-tracks">

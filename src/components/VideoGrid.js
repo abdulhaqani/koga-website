@@ -30,8 +30,6 @@ const VideoGrid = ({ videos }) => {
     return Math.floor(screenWidth / desiredWidth);
   };
 
-  const gridColumns = calculateColumns();
-
   const calculateVideoWidth = () => {
     if (screenWidth < 800) {
       return '98%'; // Set video width to 100% when screen width is less than desired width

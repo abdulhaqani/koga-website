@@ -5,7 +5,6 @@ import Fade from 'react-reveal/Fade';
 import baraku from '../public/baraku.jpeg';
 import antagonist from '../public/antagonist-blurred.png';
 import elevatorMsc from '../public/elevator.msc.png';
-import nightingale from '../public/nightingale.jpg';
 import tesla from '../public/tesla.png';
 import Lman from '../public/Lman.jpg';
 import misadv from '../public/misadv.jpg';

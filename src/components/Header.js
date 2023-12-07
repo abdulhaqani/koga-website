@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, Dropdown } from 'semantic-ui-react';
+import { Dropdown } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -149,7 +149,3 @@ const Header = () => {
   );
 };
 export default Header;
-
-{
-  /*  */
-}

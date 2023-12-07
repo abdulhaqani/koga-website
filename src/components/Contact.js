@@ -6,7 +6,6 @@ import '../scss/about.scss';
 import '../scss/default.scss';
 
 const Contact = () => {
-  const artistName = 'KOGA';
   const desc1 =
     'We at Koga recognize the importance of hearing from different perspectives, and we also recognize the power of collaborative efforts.';
   const desc2 =
