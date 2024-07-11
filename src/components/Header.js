@@ -132,9 +132,12 @@ const Header = () => {
                 </Link>
               </li>
               <li className="three wide column center aligned nav-link">
-                <Link to={'/merch'} className="nav-link">
+                <a
+                  href="https://kogaklanshop.myshopify.com/"
+                  className="nav-link"
+                >
                   Store
-                </Link>
+                </a>
               </li>
               <li className="three wide column center aligned nav-link">
                 <Link to={'/contact'} className="nav-link">
