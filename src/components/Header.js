@@ -107,9 +107,12 @@ const Header = () => {
                     </Link>
                   </Dropdown.Item>
                   <Dropdown.Item className="three wide column center aligned nav-link">
-                    <Link to={'/merch'} className="nav-link">
+                    <a
+                      href="https://kogaklanshop.myshopify.com/"
+                      className="nav-link"
+                    >
                       Merch
-                    </Link>
+                    </a>
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -136,7 +139,7 @@ const Header = () => {
                   href="https://kogaklanshop.myshopify.com/"
                   className="nav-link"
                 >
-                  Store
+                  Merch
                 </a>
               </li>
               <li className="three wide column center aligned nav-link">
