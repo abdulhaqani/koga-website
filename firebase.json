@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "koga.world",
+    "site": "koga-website",
     "public": "build",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
