@@ -7,6 +7,7 @@ import SliderImage from './SliderImage';
 const ArtistSlider = (props) => {
   const { image1, image2, image3 } = props;
   const [autoplay, setAutoplay] = useState(true);
+  setAutoplay(true);
   let settings = {
     dots: true,
     infinite: true,

@@ -24,11 +24,11 @@ const VideoGrid = ({ videos }) => {
   const desiredWidth = 400; // Width of each video
   const desiredHeight = 225; // Width of each video
 
-  const calculateColumns = () => {
-    // Calculate the number of columns based on screen width
-    console.log(Math.floor(screenWidth / desiredWidth));
-    return Math.floor(screenWidth / desiredWidth);
-  };
+  // const calculateColumns = () => {
+  //   // Calculate the number of columns based on screen width
+  //   console.log(Math.floor(screenWidth / desiredWidth));
+  //   return Math.floor(screenWidth / desiredWidth);
+  // };
 
   const calculateVideoWidth = () => {
     if (screenWidth < 800) {
